@@ -1,22 +1,20 @@
-# Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-do runlab.do
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab_Nordstrom_Returns.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:04:27 on Apr 14,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
+# Start time: 11:31:36 on Apr 14,2023
+# vlog -reportprogress 300 ./Nordstrom_Returns.sv 
+# -- Compiling module Nordstrom_Returns
 # -- Compiling module Discount_Checker
 # -- Compiling module Stolen_Checker
-# -- Compiling module Nordstrom_Returns
 # -- Compiling module tb_Nordstrom_Returns
 # 
 # Top level modules:
-# 	DE1_SoC
 # 	tb_Nordstrom_Returns
-# End time: 02:04:27 on Apr 14,2023, Elapsed time: 0:00:00
+# End time: 11:31:36 on Apr 14,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work tb_Nordstrom_Returns 
-# Start time: 02:04:27 on Apr 14,2023
+# Start time: 11:31:36 on Apr 14,2023
 # Loading sv_std.std
 # Loading work.tb_Nordstrom_Returns
 # Loading work.Nordstrom_Returns
@@ -25,5 +23,5 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 02:04:40 on Apr 14,2023, Elapsed time: 0:00:13
+# End time: 11:31:51 on Apr 14,2023, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 0

@@ -10,121 +10,121 @@ cModel Technology
 dC:/Users/Anna/Documents/ee_271/lab3a
 vDE1_SoC
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1681463067
+!s110 1681463067
 !i10b 1
 !s100 9i;]__69BNUE1T5VXfTMe1
 IY0]5EOl]X_Wgz`8Q2Ef5R3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 !s105 DE1_SoC_sv_unit
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 DE1_SoC_sv_unit
 S1
-Z4 dC:/Users/Anna/Documents/ee-271/lab3a
-Z5 w1681462969
-Z6 8./DE1_SoC.sv
-Z7 F./DE1_SoC.sv
+Z2 dC:/Users/Anna/Documents/ee-271/lab3a
+w1681462969
+8./DE1_SoC.sv
+F./DE1_SoC.sv
 L0 2
-Z8 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1681463067.000000
-Z10 !s107 ./DE1_SoC.sv|
-Z11 !s90 -reportprogress|300|./DE1_SoC.sv|
+!s108 1681463067.000000
+!s107 ./DE1_SoC.sv|
+!s90 -reportprogress|300|./DE1_SoC.sv|
 !i113 1
-Z12 tCvgOpt 0
+Z4 tCvgOpt 0
 n@d@e1_@so@c
 vDiscount_Checker
 R0
-R1
+Z5 !s110 1681497096
 !i10b 1
-!s100 ZD>WG11hhg;_5I[BzQLc71
-I=CS]aFge8XFGSan0HVHTB3
-R2
-R3
+!s100 MhU;ozYk<M>W>7XAH4X2E2
+IHmYjLVd;MK13ClP5^V8BV0
+R1
+Z6 !s105 Nordstrom_Returns_sv_unit
 S1
-R4
-R5
-R6
-R7
-L0 22
-R8
+R2
+Z7 w1681496530
+Z8 8./Nordstrom_Returns.sv
+Z9 F./Nordstrom_Returns.sv
+L0 17
+R3
 r1
 !s85 0
 31
-R9
-R10
-R11
+Z10 !s108 1681497096.000000
+Z11 !s107 ./Nordstrom_Returns.sv|
+Z12 !s90 -reportprogress|300|./Nordstrom_Returns.sv|
 !i113 1
-R12
+R4
 n@discount_@checker
 vNordstrom_Returns
 R0
-R1
-!i10b 1
-!s100 2kLdaQlZiH@iH>PPUcKVn3
-IV2k9Ib1jV6OB56348Lo@`3
-R2
-R3
-S1
-R4
 R5
+!i10b 1
+!s100 HEQRJ:kEgZNmBfJ;0fnKS2
+IeT>in8nob1c[4@F]ZW7HZ2
+R1
 R6
+S1
+R2
 R7
-L0 41
 R8
+R9
+L0 2
+R3
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R4
 n@nordstrom_@returns
 vStolen_Checker
 R0
-R1
-!i10b 1
-!s100 [dVZ3fRDCjQKIng7ADHR61
-IT^OKBB:JVH:4Ub8lc3YR20
-R2
-R3
-S1
-R4
 R5
+!i10b 1
+!s100 K0DjE?dH_db?R4Jcdgka=2
+Ii4zTSXFXkY89gTB_ZJDAk1
+R1
 R6
+S1
+R2
 R7
-L0 32
 R8
+R9
+L0 25
+R3
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R4
 n@stolen_@checker
 vtb_Nordstrom_Returns
 R0
-R1
-!i10b 1
-!s100 GVF8JJbf0K;ffI4KRghQc2
-IhU=Db90XgY]EZcXif@SN53
-R2
-R3
-S1
-R4
 R5
+!i10b 1
+!s100 X^kM:Q>lm1T2AdPHmm4R=3
+IM0ATI46;f_z339HiQo2Tm3
+R1
 R6
+S1
+R2
 R7
-L0 49
 R8
+R9
+L0 32
+R3
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 1
 R12
+!i113 1
+R4
 ntb_@nordstrom_@returns
