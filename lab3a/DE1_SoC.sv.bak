@@ -1,0 +1,45 @@
+// Top-level module that defines the I/Os for the DE-1 SoC board
+module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	output logic [9:0] LEDR;
+	input logic [3:0] KEY;
+	input logic [9:0] SW;
+	logic X, Y;
+	
+	// Default values, turns off the HEX displays
+	assign HEX0 = 7'b1111111;
+	assign HEX1 = 7'b1111111;
+	assign HEX2 = 7'b1111111;
+	assign HEX3 = 7'b1111111;
+	assign HEX4 = 7'b1111111;
+	assign HEX5 = 7'b1111111;
+endmodule
+
+// Checks if a given object is discounted based on its UPC code.
+// D is true if discounted, false if not
+module Discount_Checker (D, U, P, C);
+	output logic D;
+	input logic U, P, C;
+
+	assign D = P | (U & C);
+endmodule
+
+// Checks if a given object is discounted based on its UPC code and if it has a mark (M).
+module Stolen_Checker (S, U, P, C, M);
+	output logic S;
+	input logic U, P, C, M;
+	logic A;
+
+	nand G1 (A, U, C);
+	nor G2 (S, P, A);
+endmodule
+
+module Nordstrom_Returns (LEDR, SW);
+	output logic [9:0] LEDR;
+	input logic [9:0] SW;
+
+	always_comb begin
+		Discount_Checker G1 (.D(LEDR[9]), .U(SW[9]), .P(SW[8]), .C(SW[7]));
+		Stolen_Checker G2 (.S(LEDR[0]), .U(SW[9]), .P(SW[8]), .C(SW[7]), .M(SW[0]));
+	end
+endmodule
