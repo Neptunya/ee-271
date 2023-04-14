@@ -45,7 +45,30 @@ KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-LEDR[0] <= <GND>
+LEDR[0] <= Nordstrom_Returns:comb_45.port0
+LEDR[1] <= Nordstrom_Returns:comb_45.port0
+LEDR[2] <= Nordstrom_Returns:comb_45.port0
+LEDR[3] <= Nordstrom_Returns:comb_45.port0
+LEDR[4] <= Nordstrom_Returns:comb_45.port0
+LEDR[5] <= Nordstrom_Returns:comb_45.port0
+LEDR[6] <= Nordstrom_Returns:comb_45.port0
+LEDR[7] <= Nordstrom_Returns:comb_45.port0
+LEDR[8] <= Nordstrom_Returns:comb_45.port0
+LEDR[9] <= Nordstrom_Returns:comb_45.port0
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+
+
+|DE1_SoC|Nordstrom_Returns:comb_45
+LEDR[0] <= Stolen_Checker:sc1.S
 LEDR[1] <= <GND>
 LEDR[2] <= <GND>
 LEDR[3] <= <GND>
@@ -54,16 +77,31 @@ LEDR[5] <= <GND>
 LEDR[6] <= <GND>
 LEDR[7] <= <GND>
 LEDR[8] <= <GND>
-LEDR[9] <= <GND>
-SW[0] => ~NO_FANOUT~
+LEDR[9] <= Discount_Checker:dc1.D
+SW[0] => SW[0].IN1
 SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~
 SW[4] => ~NO_FANOUT~
 SW[5] => ~NO_FANOUT~
 SW[6] => ~NO_FANOUT~
-SW[7] => ~NO_FANOUT~
-SW[8] => ~NO_FANOUT~
-SW[9] => ~NO_FANOUT~
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN2
+SW[9] => SW[9].IN2
+
+
+|DE1_SoC|Nordstrom_Returns:comb_45|Discount_Checker:dc1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+U => D.IN0
+P => D.IN1
+C => D.IN1
+
+
+|DE1_SoC|Nordstrom_Returns:comb_45|Stolen_Checker:sc1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+U => S.IN0
+P => S.IN0
+C => S.IN1
+M => S.IN1
 
 

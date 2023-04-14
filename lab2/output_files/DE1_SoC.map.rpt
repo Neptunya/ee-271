@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Mon Apr 10 11:03:48 2023
+Fri Apr 14 02:06:20 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 10 11:03:48 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri Apr 14 02:06:20 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
@@ -156,8 +156,8 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -172,7 +172,7 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                   ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee_271/lab2/DE1_SoC.sv ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab2/DE1_SoC.sv ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
 
 
@@ -251,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -261,18 +261,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 10 11:03:31 2023
+    Info: Processing started: Fri Apr 14 02:06:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 3 design units, including 3 entities, in source file de1_soc.sv
-    Info (12023): Found entity 1: OneDigitRecog File: C:/Users/Anna/Documents/ee_271/lab2/DE1_SoC.sv Line: 1
-    Info (12023): Found entity 2: DE1_SoC File: C:/Users/Anna/Documents/ee_271/lab2/DE1_SoC.sv Line: 12
-    Info (12023): Found entity 3: DE1_SoC_testbench File: C:/Users/Anna/Documents/ee_271/lab2/DE1_SoC.sv Line: 37
-Warning (10236): Verilog HDL Implicit Net warning at DE1_SoC.sv(7): created implicit net for "F" File: C:/Users/Anna/Documents/ee_271/lab2/DE1_SoC.sv Line: 7
+    Info (12023): Found entity 1: OneDigitRecog File: C:/Users/Anna/Documents/ee-271/lab2/DE1_SoC.sv Line: 1
+    Info (12023): Found entity 2: DE1_SoC File: C:/Users/Anna/Documents/ee-271/lab2/DE1_SoC.sv Line: 12
+    Info (12023): Found entity 3: DE1_SoC_testbench File: C:/Users/Anna/Documents/ee-271/lab2/DE1_SoC.sv Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SoC.sv(7): created implicit net for "F" File: C:/Users/Anna/Documents/ee-271/lab2/DE1_SoC.sv Line: 7
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (12128): Elaborating entity "OneDigitRecog" for hierarchy "OneDigitRecog:O1" File: C:/Users/Anna/Documents/ee_271/lab2/DE1_SoC.sv Line: 31
+Info (12128): Elaborating entity "OneDigitRecog" for hierarchy "OneDigitRecog:O1" File: C:/Users/Anna/Documents/ee-271/lab2/DE1_SoC.sv Line: 31
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee_271/lab2/output_files/DE1_SoC.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee-271/lab2/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
@@ -280,15 +280,15 @@ Info (21057): Implemented 68 device resources after synthesis - the final resour
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Mon Apr 10 11:03:48 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Fri Apr 14 02:06:20 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Anna/Documents/ee_271/lab2/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/Users/Anna/Documents/ee-271/lab2/output_files/DE1_SoC.map.smsg.
 
 

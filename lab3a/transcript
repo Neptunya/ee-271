@@ -2,7 +2,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:38:30 on Apr 13,2023
+# Start time: 02:04:27 on Apr 14,2023
 # vlog -reportprogress 300 ./DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module Discount_Checker
@@ -13,10 +13,10 @@ do runlab.do
 # Top level modules:
 # 	DE1_SoC
 # 	tb_Nordstrom_Returns
-# End time: 22:38:30 on Apr 13,2023, Elapsed time: 0:00:00
+# End time: 02:04:27 on Apr 14,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work tb_Nordstrom_Returns 
-# Start time: 22:38:30 on Apr 13,2023
+# Start time: 02:04:27 on Apr 14,2023
 # Loading sv_std.std
 # Loading work.tb_Nordstrom_Returns
 # Loading work.Nordstrom_Returns
@@ -25,5 +25,5 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 22:38:54 on Apr 13,2023, Elapsed time: 0:00:24
+# End time: 02:04:40 on Apr 14,2023, Elapsed time: 0:00:13
 # Errors: 0, Warnings: 0
