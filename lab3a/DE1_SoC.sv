@@ -12,5 +12,6 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 	assign HEX3 = 7'b1111111;
 	assign HEX4 = 7'b1111111;
 	assign HEX5 = 7'b1111111;
+	
 endmodule
 

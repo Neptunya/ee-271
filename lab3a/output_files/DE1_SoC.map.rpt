@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Fri Apr 14 12:35:49 2023
+Sat Apr 15 23:02:39 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,8 +10,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,109 +41,114 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri Apr 14 12:35:49 2023           ;
-; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name               ; DE1_SoC                                     ;
-; Top-level Entity Name       ; DE1_SoC                                     ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Apr 15 23:02:39 2023       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; Freds_House_Returns                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 62                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; DE1_SoC            ; DE1_SoC            ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                              ;
++---------------------------------------------------------------------------------+---------------------+--------------------+
+; Option                                                                          ; Setting             ; Default Value      ;
++---------------------------------------------------------------------------------+---------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6        ;                    ;
+; Top-level entity name                                                           ; Freds_House_Returns ; DE1_SoC            ;
+; Family name                                                                     ; Cyclone V           ; Cyclone V          ;
+; State Machine Processing                                                        ; User-Encoded        ; Auto               ;
+; Use smart compilation                                                           ; Off                 ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                  ; On                 ;
+; Enable compact report table                                                     ; Off                 ; Off                ;
+; Restructure Multiplexers                                                        ; Auto                ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                 ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                 ; Off                ;
+; Preserve fewer node names                                                       ; On                  ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable              ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001        ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993           ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                 ; Off                ;
+; Extract Verilog State Machines                                                  ; On                  ; On                 ;
+; Extract VHDL State Machines                                                     ; On                  ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                 ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000                ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                 ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                  ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                  ; On                 ;
+; Parallel Synthesis                                                              ; On                  ; On                 ;
+; DSP Block Balancing                                                             ; Auto                ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                  ; On                 ;
+; Power-Up Don't Care                                                             ; On                  ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                 ; Off                ;
+; Remove Duplicate Registers                                                      ; On                  ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                 ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                 ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                 ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                 ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                 ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                  ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                 ; Off                ;
+; Optimization Technique                                                          ; Balanced            ; Balanced           ;
+; Carry Chain Length                                                              ; 70                  ; 70                 ;
+; Auto Carry Chains                                                               ; On                  ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                  ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                 ; Off                ;
+; Auto ROM Replacement                                                            ; On                  ; On                 ;
+; Auto RAM Replacement                                                            ; On                  ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                  ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto                ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                  ; On                 ;
+; Strict RAM Replacement                                                          ; Off                 ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                  ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                 ; Off                ;
+; Auto Resource Sharing                                                           ; Off                 ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                 ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                 ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                 ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                  ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                 ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                  ; On                 ;
+; Report Parameter Settings                                                       ; On                  ; On                 ;
+; Report Source Assignments                                                       ; On                  ; On                 ;
+; Report Connectivity Checks                                                      ; On                  ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                 ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                   ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation  ; Normal compilation ;
+; HDL message level                                                               ; Level2              ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                 ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                 ; 100                ;
+; Clock MUX Protection                                                            ; On                  ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                 ; Off                ;
+; Block Design Naming                                                             ; Auto                ; Auto               ;
+; SDC constraint protection                                                       ; Off                 ; Off                ;
+; Synthesis Effort                                                                ; Auto                ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                  ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                 ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium              ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                  ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                  ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                 ; Off                ;
++---------------------------------------------------------------------------------+---------------------+--------------------+
 
 
 +------------------------------------------+
@@ -145,8 +156,8 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -156,45 +167,130 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; Freds_House_Returns.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 12          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 24          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 1           ;
+;     -- <=3 input functions                  ; 23          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 62          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[9]~input ;
+; Maximum fan-out                             ; 24          ;
+; Total fan-out                               ; 174         ;
+; Average fan-out                             ; 1.18        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name         ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+---------------------+--------------+
+; |Freds_House_Returns       ; 24 (22)             ; 0 (0)                     ; 0                 ; 0          ; 62   ; 0            ; |Freds_House_Returns                      ; Freds_House_Returns ; work         ;
+;    |Discount_Checker:dc1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Freds_House_Returns|Discount_Checker:dc1 ; Discount_Checker    ; work         ;
+;    |Stolen_Checker:sc1|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Freds_House_Returns|Stolen_Checker:sc1   ; Stolen_Checker      ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 44                          ;
+;     normal            ; 44                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 18                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 1                           ;
+; boundary_port         ; 62                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.79                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Apr 14 12:35:41 2023
+    Info: Processing started: Sat Apr 15 23:02:31 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
     Info (12023): Found entity 1: DE1_SoC File: C:/Users/Anna/Documents/ee-271/lab3a/DE1_SoC.sv Line: 2
-Info (12021): Found 4 design units, including 4 entities, in source file nordstrom_returns.sv
-    Info (12023): Found entity 1: Nordstrom_Returns File: C:/Users/Anna/Documents/ee-271/lab3a/Nordstrom_Returns.sv Line: 2
-    Info (12023): Found entity 2: Discount_Checker File: C:/Users/Anna/Documents/ee-271/lab3a/Nordstrom_Returns.sv Line: 17
-    Info (12023): Found entity 3: Stolen_Checker File: C:/Users/Anna/Documents/ee-271/lab3a/Nordstrom_Returns.sv Line: 25
-    Info (12023): Found entity 4: tb_Nordstrom_Returns File: C:/Users/Anna/Documents/ee-271/lab3a/Nordstrom_Returns.sv Line: 32
-Error (10170): Verilog HDL syntax error at seg7.sv(8) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 8
-Error (10170): Verilog HDL syntax error at seg7.sv(10) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 10
-Error (10170): Verilog HDL syntax error at seg7.sv(12) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 12
-Error (10170): Verilog HDL syntax error at seg7.sv(14) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 14
-Error (10170): Verilog HDL syntax error at seg7.sv(16) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 16
-Error (10170): Verilog HDL syntax error at seg7.sv(18) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 18
-Error (10170): Verilog HDL syntax error at seg7.sv(20) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 20
-Error (10170): Verilog HDL syntax error at seg7.sv(22) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 22
-Error (10170): Verilog HDL syntax error at seg7.sv(24) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 24
-Error (10170): Verilog HDL syntax error at seg7.sv(26) near text: "leds";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 26
-Error (10112): Ignored design unit "seg7" at seg7.sv(1) due to previous errors File: C:/Users/Anna/Documents/ee-271/lab3a/seg7.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file nordstrom_returns.sv
 Info (12021): Found 0 design units, including 0 entities, in source file seg7.sv
-Error (10170): Verilog HDL syntax error at Freds_House_Returns.sv(10) near text: "=";  expecting ".", or "(". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 10
-Error (10280): Verilog HDL Port Declaration error at Freds_House_Returns.sv(10): cannot redeclare port "SW" because it is already fully declared File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 10
-Error (10170): Verilog HDL syntax error at Freds_House_Returns.sv(10) near text: "}";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 10
-Error (10112): Ignored design unit "Freds_House_Returns" at Freds_House_Returns.sv(1) due to previous errors File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file freds_house_returns.sv
+Info (12021): Found 3 design units, including 3 entities, in source file freds_house_returns.sv
+    Info (12023): Found entity 1: Freds_House_Returns File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 1
+    Info (12023): Found entity 2: Discount_Checker File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 95
+    Info (12023): Found entity 3: Stolen_Checker File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 103
+Info (12127): Elaborating entity "Freds_House_Returns" for the top level hierarchy
+Info (12128): Elaborating entity "Discount_Checker" for hierarchy "Discount_Checker:dc1" File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 14
+Info (12128): Elaborating entity "Stolen_Checker" for hierarchy "Stolen_Checker:sc1" File: C:/Users/Anna/Documents/ee-271/lab3a/Freds_House_Returns.sv Line: 15
+Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee-271/lab3a/output_files/DE1_SoC.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 15 errors, 0 warnings
-    Error: Peak virtual memory: 4764 megabytes
-    Error: Processing ended: Fri Apr 14 12:35:49 2023
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:17
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 24 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Sat Apr 15 23:02:39 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+
