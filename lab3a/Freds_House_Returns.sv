@@ -106,3 +106,26 @@ module Stolen_Checker (S, U, P, C, M);
 
 	assign S = ~(P | M | ~(U | ~C));
 endmodule
+
+module tb_Freds_House_Returns();
+logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+logic [9:0] LEDR;
+logic [9:0] SW;
+
+	Freds_House_Returns dut (.HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .LEDR, .SW);
+
+	integer i;
+	initial begin
+		SW [0] = 1'b0;
+		for (i = 0; i < 8; i++) begin
+			SW[9:7] = i;
+			#10;
+		end
+
+		SW [0] = 1'b1;
+		for (i = 0; i < 8; i++) begin
+			SW[9:7] = i;
+			#10;
+		end
+	end
+endmodule

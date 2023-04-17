@@ -34,34 +34,34 @@ Z4 tCvgOpt 0
 n@d@e1_@so@c
 vDiscount_Checker
 R0
-Z5 !s110 1681497096
+Z5 !s110 1681695327
 !i10b 1
-!s100 MhU;ozYk<M>W>7XAH4X2E2
-IHmYjLVd;MK13ClP5^V8BV0
+!s100 Uh>4H<AQIW5TS]HaeP7_;1
+II7GK<G`LZ7?F9XD`?RF5j0
 R1
-Z6 !s105 Nordstrom_Returns_sv_unit
+Z6 !s105 Freds_House_Returns_sv_unit
 S1
 R2
-Z7 w1681496530
-Z8 8./Nordstrom_Returns.sv
-Z9 F./Nordstrom_Returns.sv
-L0 17
+Z7 w1681695048
+Z8 8./Freds_House_Returns.sv
+Z9 F./Freds_House_Returns.sv
+L0 95
 R3
 r1
 !s85 0
 31
-Z10 !s108 1681497096.000000
-Z11 !s107 ./Nordstrom_Returns.sv|
-Z12 !s90 -reportprogress|300|./Nordstrom_Returns.sv|
+Z10 !s108 1681695327.000000
+Z11 !s107 ./Freds_House_Returns.sv|
+Z12 !s90 -reportprogress|300|./Freds_House_Returns.sv|
 !i113 1
 R4
 n@discount_@checker
-vNordstrom_Returns
+vFreds_House_Returns
 R0
 R5
 !i10b 1
-!s100 HEQRJ:kEgZNmBfJ;0fnKS2
-IeT>in8nob1c[4@F]ZW7HZ2
+!s100 DeeOUZ<mR>bg=aUj`91Q23
+Icjnhin1bA8mW[CEWkBRLY1
 R1
 R6
 S1
@@ -69,7 +69,7 @@ R2
 R7
 R8
 R9
-L0 2
+L0 1
 R3
 r1
 !s85 0
@@ -79,13 +79,37 @@ R11
 R12
 !i113 1
 R4
+n@freds_@house_@returns
+vNordstrom_Returns
+R0
+Z13 !s110 1681497096
+!i10b 1
+!s100 HEQRJ:kEgZNmBfJ;0fnKS2
+IeT>in8nob1c[4@F]ZW7HZ2
+R1
+Z14 !s105 Nordstrom_Returns_sv_unit
+S1
+R2
+Z15 w1681496530
+Z16 8./Nordstrom_Returns.sv
+Z17 F./Nordstrom_Returns.sv
+L0 2
+R3
+r1
+!s85 0
+31
+Z18 !s108 1681497096.000000
+Z19 !s107 ./Nordstrom_Returns.sv|
+Z20 !s90 -reportprogress|300|./Nordstrom_Returns.sv|
+!i113 1
+R4
 n@nordstrom_@returns
 vStolen_Checker
 R0
 R5
 !i10b 1
-!s100 K0DjE?dH_db?R4Jcdgka=2
-Ii4zTSXFXkY89gTB_ZJDAk1
+!s100 Adk;OiCaRL>T`cONC3`oE3
+IWER=ke10P8WAN7Td162K:1
 R1
 R6
 S1
@@ -93,7 +117,7 @@ R2
 R7
 R8
 R9
-L0 25
+L0 103
 R3
 r1
 !s85 0
@@ -104,12 +128,12 @@ R12
 !i113 1
 R4
 n@stolen_@checker
-vtb_Nordstrom_Returns
+vtb_Freds_House_Returns
 R0
 R5
 !i10b 1
-!s100 X^kM:Q>lm1T2AdPHmm4R=3
-IM0ATI46;f_z339HiQo2Tm3
+!s100 112o[li14V5`XjQ_8Ql[_0
+IR=QhWZ0WQmAzdBCefEn191
 R1
 R6
 S1
@@ -117,7 +141,7 @@ R2
 R7
 R8
 R9
-L0 32
+L0 110
 R3
 r1
 !s85 0
@@ -125,6 +149,30 @@ r1
 R10
 R11
 R12
+!i113 1
+R4
+ntb_@freds_@house_@returns
+vtb_Nordstrom_Returns
+R0
+R13
+!i10b 1
+!s100 X^kM:Q>lm1T2AdPHmm4R=3
+IM0ATI46;f_z339HiQo2Tm3
+R1
+R14
+S1
+R2
+R15
+R16
+R17
+L0 32
+R3
+r1
+!s85 0
+31
+R18
+R19
+R20
 !i113 1
 R4
 ntb_@nordstrom_@returns
