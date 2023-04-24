@@ -8,9 +8,9 @@ module Freds_House_Returns (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR, SW);
 	assign U = SW[9];
 	assign P = SW[8];
 	assign C = SW[7];
- 
+
 	assign UPC = {SW[9], SW[8], SW[7]};
-	
+
 	Discount_Checker dc1 (.D(D), .U(U), .P(P), .C(C));
 	Stolen_Checker sc1 (.S(S), .U(U), .P(P), .C(C), .M(SW[0]));
 
@@ -78,7 +78,7 @@ module Freds_House_Returns (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR, SW);
 				HEX4 = 7'b1000000;
 				HEX5 = 7'b0010010;
 			end
-			
+
 			default: begin
 				HEX0 = 7'b1111111;
 				HEX1 = 7'b1111111;

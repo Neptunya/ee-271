@@ -1,5 +1,5 @@
 Fitter report for DE1_SoC
-Sat Apr 15 23:03:03 2023
+Mon Apr 17 19:35:04 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -59,7 +59,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sat Apr 15 23:03:03 2023       ;
+; Fitter Status                   ; Successful - Mon Apr 17 19:35:04 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; Freds_House_Returns                         ;
@@ -147,20 +147,17 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.01        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processors 7-12        ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -2371,7 +2368,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CSEMA5F31C6 for design "DE1_SoC"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -2401,18 +2398,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee-271/lab3a/output_files/DE1_SoC.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 7294 megabytes
-    Info: Processing ended: Sat Apr 15 23:03:04 2023
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:01:06
+    Info: Peak virtual memory: 6530 megabytes
+    Info: Processing ended: Mon Apr 17 19:35:04 2023
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:43
 
 
 +----------------------------+

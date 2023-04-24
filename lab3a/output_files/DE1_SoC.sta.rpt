@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE1_SoC
-Sat Apr 15 23:03:14 2023
+Mon Apr 17 19:35:20 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -97,20 +97,17 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.11        ;
-; Maximum used               ; 12          ;
+; Average used               ; 1.05        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.5%      ;
-;     Processor 3            ;   1.5%      ;
-;     Processor 4            ;   1.5%      ;
-;     Processor 5            ;   1.5%      ;
-;     Processor 6            ;   1.5%      ;
-;     Processors 7-12        ;   0.5%      ;
+;     Processor 2            ;   1.7%      ;
+;     Processor 3            ;   1.6%      ;
+;     Processor 4            ;   1.6%      ;
 +----------------------------+-------------+
 
 
@@ -119,7 +116,7 @@ agreement for further details.
 +------------------------+--------+--------------------------+
 ; SDC File Path          ; Status ; Read at                  ;
 +------------------------+--------+--------------------------+
-; DE1_SoC_golden_top.sdc ; OK     ; Sat Apr 15 23:03:11 2023 ;
+; DE1_SoC_golden_top.sdc ; OK     ; Mon Apr 17 19:35:17 2023 ;
 +------------------------+--------+--------------------------+
 
 
@@ -781,10 +778,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Apr 15 23:03:10 2023
+    Info: Processing started: Mon Apr 17 19:35:16 2023
 Info: Command: quartus_sta DE1_SoC -c DE1_SoC
 Info: qsta_default_script.tcl version: #1
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'DE1_SoC_golden_top.sdc'
@@ -837,8 +834,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee-271/lab3a/output_files/DE1_SoC.sta.smsg
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5224 megabytes
-    Info: Processing ended: Sat Apr 15 23:03:14 2023
+    Info: Peak virtual memory: 5126 megabytes
+    Info: Processing ended: Mon Apr 17 19:35:20 2023
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

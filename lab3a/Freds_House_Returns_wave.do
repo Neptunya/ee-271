@@ -1,11 +1,11 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -expand -group inputs {/tb_Freds_House_Returns/SW[9]}
-add wave -noupdate -expand -group inputs {/tb_Freds_House_Returns/SW[8]}
-add wave -noupdate -expand -group inputs {/tb_Freds_House_Returns/SW[7]}
-add wave -noupdate -expand -group inputs {/tb_Freds_House_Returns/SW[0]}
-add wave -noupdate -expand -group outputs {/tb_Freds_House_Returns/LEDR[9]}
-add wave -noupdate -expand -group outputs {/tb_Freds_House_Returns/LEDR[0]}
+add wave -noupdate -expand -group Switch_Inputs {/tb_Freds_House_Returns/SW[9]}
+add wave -noupdate -expand -group Switch_Inputs {/tb_Freds_House_Returns/SW[8]}
+add wave -noupdate -expand -group Switch_Inputs {/tb_Freds_House_Returns/SW[7]}
+add wave -noupdate -expand -group Switch_Inputs {/tb_Freds_House_Returns/SW[0]}
+add wave -noupdate -expand -group LED_Outputs {/tb_Freds_House_Returns/LEDR[9]}
+add wave -noupdate -expand -group LED_Outputs {/tb_Freds_House_Returns/LEDR[0]}
 add wave -noupdate -expand -group Seven_Seg_Display /tb_Freds_House_Returns/HEX0
 add wave -noupdate -expand -group Seven_Seg_Display /tb_Freds_House_Returns/HEX1
 add wave -noupdate -expand -group Seven_Seg_Display /tb_Freds_House_Returns/HEX2
