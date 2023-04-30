@@ -4,6 +4,7 @@ module Marketboard (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 	input logic [3:0] KEY;
 	input logic [9:0] SW;
   logic D, S;
+	logic [3:0] UPC;
 
   assign UPC = {SW[9], SW[8], SW[7]};
 
@@ -55,17 +56,7 @@ module Marketboard (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 				HEX5 = 7'b0100001;
 			end
 
-			3'b101: begin // fsn
-			 //         6543210
-				HEX0 = 7'b1111111;
-				HEX1 = 7'b1111111;
-				HEX2 = 7'b1111111;
-				HEX3 = 7'b1001000;
-				HEX4 = 7'b0010010;
-				HEX5 = 7'b0001110;
-			end
-
-			3'b110: begin // slr
+			3'b101: begin // slr
 			 //         6543210
 				HEX0 = 7'b1111111;
 				HEX1 = 7'b1111111;
@@ -73,6 +64,16 @@ module Marketboard (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 				HEX3 = 7'b0101111;
 				HEX4 = 7'b1000111;
 				HEX5 = 7'b0010010;
+			end
+
+			3'b110: begin // fsn
+			 //         6543210
+				HEX0 = 7'b1111111;
+				HEX1 = 7'b1111111;
+				HEX2 = 7'b1111111;
+				HEX3 = 7'b1001000;
+				HEX4 = 7'b0010010;
+				HEX5 = 7'b0001110;
 			end
 
 			default: begin
@@ -100,7 +101,7 @@ module Stolen_Checker (S, U, P, C, M);
 	output logic S;
 	input logic U, P, C, M;
 
-	assign S = U & M;
+	assign S = M & ~P & (U | C);
 endmodule
 
 module tb_Marketboard();

@@ -10,23 +10,23 @@ cModel Technology
 Z0 dC:/Users/Anna/Documents/ee-271/lab4
 vDiscount_Checker
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1682358518
+Z2 !s110 1682465809
 !i10b 1
-!s100 k6>I4`T?ALSLL]P5CETce1
-I]GcAV[HRYC8ZK]XOU20TV1
+!s100 i@hoKX0B9N=ZVNO@?Hkl>2
+IMFWE@@j;W]QL@_A7;YQ8j1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 Marketboard_sv_unit
 S1
 R0
-Z5 w1682357776
+Z5 w1682403196
 Z6 8./Marketboard.sv
 Z7 F./Marketboard.sv
-L0 91
+L0 92
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1682358518.000000
+Z9 !s108 1682465809.000000
 Z10 !s107 ./Marketboard.sv|
 Z11 !s90 -reportprogress|300|./Marketboard.sv|
 !i113 1
@@ -36,8 +36,8 @@ vMarketboard
 R1
 R2
 !i10b 1
-!s100 TGfh=HFMGhcog:bK7mV:73
-I[7N5`oRf801[<2lI=U52>1
+!s100 hgEle2gQnK8offBF1zBg62
+ISF?bkd0cC;nJY;QUo2eDM2
 R3
 R4
 S1
@@ -60,8 +60,8 @@ vStolen_Checker
 R1
 R2
 !i10b 1
-!s100 JVb<Mid:P38@D:5hKBmEP2
-IDd0lmFlzKdfPJmG3WFa_=1
+!s100 mIegf]mX^n74fWFH;PJ2N2
+I_f3b7R@K]nzLS@K3e0Rbd1
 R3
 R4
 S1
@@ -69,7 +69,7 @@ R0
 R5
 R6
 R7
-L0 99
+L0 100
 R8
 r1
 !s85 0
@@ -84,8 +84,8 @@ vtb_Marketboard
 R1
 R2
 !i10b 1
-!s100 <nC]HlJc;GU_K;z8a@86Z3
-IbnWSmZ0Gd?OZzf7ilkSnE0
+!s100 JjcJki@G=ZCT@UQG_:AZe0
+IRAU`;P@zaIC?K<2H3<<g=2
 R3
 R4
 S1
@@ -93,7 +93,7 @@ R0
 R5
 R6
 R7
-L0 106
+L0 107
 R8
 r1
 !s85 0
