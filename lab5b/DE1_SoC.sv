@@ -20,8 +20,8 @@ module DE1_SoC (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 	logic clkSelect;
 	
 	// Uncomment ONE of the following two lines depending on intention
-	// assign clkSelect = CLOCK_50; // for simulation
-	assign clkSelect = div_clk[whichClock]; // for board
+	assign clkSelect = CLOCK_50; // for simulation
+	// assign clkSelect = div_clk[whichClock]; // for board
 	
 	// Set up FSM inputs and outputs.
 	logic x, y;
@@ -57,14 +57,12 @@ module DE1_SoC_testbench();
 	
 	// Test the design.
 	initial begin
-						repeat(1) @(posedge CLOCK_50);
-		SW[9] <= 1; repeat(1) @(posedge CLOCK_50); // Always reset FSMs at start
-		SW[9] <= 0; repeat(1) @(posedge CLOCK_50);
-		SW[0] <= 0; repeat(4) @(posedge CLOCK_50); // Test case 1: input is 0
-		SW[0] <= 1; repeat(1) @(posedge CLOCK_50); // Test case 2: input 1 for 1 cycle
-		SW[0] <= 0; repeat(1) @(posedge CLOCK_50);
-		SW[0] <= 1; repeat(4) @(posedge CLOCK_50); // Test case 3: input 1 for >2 cycles
-		SW[0] <= 0; repeat(2) @(posedge CLOCK_50);
+										repeat(1) @(posedge CLOCK_50);
+		SW[9] <= 1; 				repeat(1) @(posedge CLOCK_50); // Always reset FSMs at start
+		SW[9] <= 0; 				repeat(1) @(posedge CLOCK_50);
+		SW[0] <= 0; SW[1] <= 0; repeat(4) @(posedge CLOCK_50); // case 1: calm wind
+		SW[0] <= 0; SW[1] <= 1; repeat(6) @(posedge CLOCK_50); // case 2: right to left wind
+		SW[0] <= 1; SW[1] <= 0; repeat(6) @(posedge CLOCK_50); // case 3: left to right wind
 		$stop; // End the simulation.
 	end
 endmodule

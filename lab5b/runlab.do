@@ -4,7 +4,7 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-vlog "./simple.sv"
+vlog "./landing_lights.sv"
 vlog "./DE1_SoC.sv"
 vlog "./clock_divider.sv"
 
