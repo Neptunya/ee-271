@@ -1,0 +1,86 @@
+module landing_lights (clk, reset, x, y, out);
+	input logic clk, reset, x, y;
+	output logic [2:0] out;
+	
+	// State variables
+	enum { calm1, calm2, right_left1, right_left2, right_left3, left_right1, left_right2, left_right3, none } ps, ns;
+	
+	// Next State logic
+	always_comb begin
+		case (ps)
+			calm1: 		 if (~x & ~y)		 begin ns = calm2; 		 out = 3'b010; end
+							 else if (~x & y)  begin ns = right_left1; out = 3'b001; end
+							 else if (x & ~y)  begin ns = left_right1; out = 3'b100; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			calm2: 		 if (~x & ~y)		 begin ns = calm1; 		 out = 3'b101; end
+							 else if (~x & y)  begin ns = right_left1; out = 3'b001; end
+							 else if (x & ~y)  begin ns = left_right1; out = 3'b100; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			right_left1: if (~x & y) 		 begin ns = right_left2; out = 3'b010; end
+							 else if (~x & ~y) begin ns = calm1; 		 out = 3'b101; end
+							 else if (x & ~y)  begin ns = left_right1; out = 3'b100; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			right_left2: if (~x & y) 		 begin ns = right_left3; out = 3'b100; end
+							 else if (~x & ~y) begin ns = calm1; 		 out = 3'b101; end
+							 else if (x & ~y)  begin ns = left_right1; out = 3'b100; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			right_left3: if (~x & y) 		 begin ns = right_left1; out = 3'b001; end
+							 else if (~x & ~y) begin ns = calm1; 		 out = 3'b101; end
+							 else if (x & ~y)  begin ns = left_right1; out = 3'b100; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			left_right1: if (x & ~y) 		 begin ns = left_right2; out = 3'b010; end
+							 else if (~x & ~y) begin ns = calm1; 		 out = 3'b101; end
+							 else if (~x & y)  begin ns = right_left1; out = 3'b001; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			left_right2: if (x & ~y) 		 begin ns = left_right3; out = 3'b001; end
+							 else if (~x & ~y) begin ns = calm1; 		 out = 3'b101; end
+							 else if (~x & y)  begin ns = right_left1; out = 3'b001; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			left_right3: if (x & ~y)		 begin ns = left_right1; out = 3'b100; end
+							 else if (~x & ~y) begin ns = calm1; 		 out = 3'b101; end
+							 else if (~x & y)  begin ns = right_left1; out = 3'b001; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+			none:			 if (~x & ~y)		 begin ns = calm1; 		 out = 3'b101; end
+							 else if (~x & y)	 begin ns = right_left1; out = 3'b001; end
+							 else if (x & ~y)  begin ns = left_right1; out = 3'b100; end
+							 else 				 begin ns = none; 		 out = 3'b111; end
+		endcase
+	end
+	
+	// DFFs
+	always_ff @(posedge clk) begin
+		if (reset)
+			ps <= none;
+		else
+			ps <= ns;
+	end
+endmodule
+
+module landing_lights_testbench();
+	logic clk, reset, x, y;
+	logic out;
+	
+	simple dut (clk, reset, x, y, out);
+	// Set up a simulated clock.
+	parameter CLOCK_PERIOD=100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk; // Forever toggle the clock
+	end
+		// Set up the inputs to the design. Each line is a clock cycle.
+	initial begin
+										@(posedge clk);
+		reset <= 1; 				@(posedge clk); //Always reset FSMs at start
+		reset <= 0; w <= 0; 		@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+										@(posedge clk);
+						w <= 1;		@(posedge clk);
+						w <= 0;		@(posedge clk);
+						w <= 1;		@(posedge clk);
+						repeat (5)	@(posedge clk);
+						w <= 0;		@(posedge clk);
+										@(posedge clk);
+		$stop; // End the simulation.
+	end
+endmodule
