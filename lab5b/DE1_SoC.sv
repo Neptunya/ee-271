@@ -10,7 +10,7 @@ module DE1_SoC (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
 	logic reset;
 	logic [31:0] div_clk;
 	
-	assign reset = SW[9];
+	assign reset = KEY[0];
 	parameter whichClock = 25; // 0.75 Hz clock
 	clock_divider cdiv (.clock(CLOCK_50),
 							  .reset(reset),
@@ -58,8 +58,8 @@ module DE1_SoC_testbench();
 	// Test the design.
 	initial begin
 										repeat(1) @(posedge CLOCK_50);
-		SW[9] <= 1; 				repeat(1) @(posedge CLOCK_50); // Always reset FSMs at start
-		SW[9] <= 0; 				repeat(1) @(posedge CLOCK_50);
+		KEY[0] <= 1; 				repeat(1) @(posedge CLOCK_50); // Always reset FSMs at start
+		KEY[0] <= 0; 				repeat(1) @(posedge CLOCK_50);
 		SW[0] <= 0; SW[1] <= 0; repeat(4) @(posedge CLOCK_50); // case 1: calm wind
 		SW[0] <= 0; SW[1] <= 1; repeat(6) @(posedge CLOCK_50); // case 2: right to left wind
 		SW[0] <= 1; SW[1] <= 0; repeat(6) @(posedge CLOCK_50); // case 3: left to right wind

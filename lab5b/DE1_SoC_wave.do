@@ -1,16 +1,15 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /DE1_SoC_testbench/CLOCK_PERIOD
-add wave -noupdate /DE1_SoC_testbench/CLOCK_50
-add wave -noupdate {/DE1_SoC_testbench/SW[9]}
-add wave -noupdate {/DE1_SoC_testbench/SW[1]}
-add wave -noupdate {/DE1_SoC_testbench/SW[0]}
-add wave -noupdate {/DE1_SoC_testbench/LEDR[2]}
-add wave -noupdate {/DE1_SoC_testbench/LEDR[1]}
-add wave -noupdate {/DE1_SoC_testbench/LEDR[0]}
+add wave -noupdate -expand -group inputs /DE1_SoC_testbench/CLOCK_50
+add wave -noupdate -expand -group inputs {/DE1_SoC_testbench/SW[1]}
+add wave -noupdate -expand -group inputs {/DE1_SoC_testbench/SW[0]}
+add wave -noupdate -expand -group inputs -label {KEY[0] (reset)} {/DE1_SoC_testbench/KEY[0]}
+add wave -noupdate -expand -group {led outputs} {/DE1_SoC_testbench/LEDR[2]}
+add wave -noupdate -expand -group {led outputs} {/DE1_SoC_testbench/LEDR[1]}
+add wave -noupdate -expand -group {led outputs} {/DE1_SoC_testbench/LEDR[0]}
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {215 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -25,4 +24,4 @@ configure wave -griddelta 2
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {0 ps} {1908 ps}

@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Anna/Documents/ee-271/lab5a
 vclock_divider
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1682979719
+Z2 !s110 1683002059
 !i10b 1
 !s100 HPB25k66knN<N@CDGQk3A2
 IkD`Am7g9:;=`?a1_`6?581
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1682979719.000000
+Z6 !s108 1683002059.000000
 !s107 ./clock_divider.sv|
 !s90 -reportprogress|300|./clock_divider.sv|
 !i113 1
@@ -35,13 +35,13 @@ vDE1_SoC
 R1
 R2
 !i10b 1
-!s100 5iZzjAkJQXgJnHN3@_X9T1
-IB:YI][bWaBN`cf3LXXM_i2
+!s100 oBhU_<0Fd7=>^Q>bgKV`j2
+I:Q4l^J`Q`LCQDdll:4akM0
 R3
 Z8 !s105 DE1_SoC_sv_unit
 S1
 R4
-Z9 w1682979701
+Z9 w1683001914
 Z10 8./DE1_SoC.sv
 Z11 F./DE1_SoC.sv
 L0 1
@@ -59,8 +59,8 @@ vDE1_SoC_testbench
 R1
 R2
 !i10b 1
-!s100 z3BNI=?iQGjPj;Y04lAKc3
-I4VD]Zd?:BH:ZZDb^jNc[`0
+!s100 <G_HgL4fY[hLQiVJEk@b43
+I3hkZ<24CS73V6kW5e=YC50
 R3
 R8
 S1

@@ -42,7 +42,7 @@ HEX5[3] <= <GND>
 HEX5[4] <= <GND>
 HEX5[5] <= <GND>
 HEX5[6] <= <GND>
-KEY[0] => ~NO_FANOUT~
+KEY[0] => reset.IN1
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
@@ -65,7 +65,7 @@ SW[5] => ~NO_FANOUT~
 SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => ~NO_FANOUT~
-SW[9] => reset.IN1
+SW[9] => ~NO_FANOUT~
 
 
 |DE1_SoC|clock_divider:cdiv
