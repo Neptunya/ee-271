@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "light_on",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "l",
+					"strict" : false
+				},
+				{
+					"name" : "r",
+					"strict" : false
+				},
+				{
+					"name" : "nl",
+					"strict" : false
+				},
+				{
+					"name" : "nr",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

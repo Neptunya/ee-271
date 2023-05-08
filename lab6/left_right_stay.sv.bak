@@ -1,0 +1,29 @@
+module left_right_stay (led_on, clk, reset, l, r, led_start)
+	input logic clk, reset, left, right;
+	input logic [3:0] led_start
+	output logic [3:0] led_on;
+	logic l_btn, r_btn, l_pressed, r_pressed;
+	logic [3:0] led;
+	
+	dff_pair dff_pairL(clk, l, l_btn);
+	dff_pair dff_pairR(clk, r, r_btn);
+	
+	button_fsm btnL(clk, reset, l_btn, l_pressed);
+	button_fsm btnR(clk, reset, r_btn, r_pressed);
+	
+	always_comb begin
+		if (l_pressed & !r_pressed) begin
+			led <= led_start - 1;
+		end
+		else if (!l_pressed & r_pressed) begin
+			led <= led_start + 1;
+		end
+		else begin
+			led <= led_start;
+		end
+	end
+	
+	always_ff @(posedge clk) begin
+		led_on <= led;
+	end
+endmodule

@@ -1,0 +1,93 @@
+module center_light (clk, reset, l, r, nl, nr, light_on);
+	input logic clk, reset;
+	input logic l, r, nl, nr;
+	output logic light_on;
+	
+	enum { on, to_left, to_right, idle } ps, ns;
+	
+	always_comb begin
+		case (ps)
+			on:
+				if (l & ~r) begin
+					light_on = 1'b0;
+					ns = to_left;
+				end
+				else if (r & ~l) begin
+					light_on = 1'b0;
+					ns = to_right;
+				end
+				else begin
+					ns = on;
+				end
+			to_left: 
+				if (r & ~l) begin
+					light_on = 1'b1;
+					ns = on;
+				end
+				else if (l & ~r) begin
+					ns = idle;
+				end
+				else begin
+					ns = to_left;
+				end
+			to_right:
+				if (l & ~r) begin
+					light_on = 1'b1;
+					ns = on;
+				end
+				else if (r & ~l) begin
+					ns = idle;
+				end
+				else begin
+					ns = to_right;
+				end
+			idle:
+				if (nl) begin
+					ns = to_left;
+				end
+				else if (nr) begin
+					ns = to_right;
+				end
+				else begin
+					ns = idle;
+				end
+		endcase
+	end
+	
+	always_ff @(posedge clk) begin
+		if (reset)
+			ps <= on;
+		else
+			ps <= ns;
+	end
+endmodule
+
+module center_light_testbench();
+	logic CLOCK_50;
+	logic [9:0] LEDR;
+	logic [3:0] KEY;
+	logic [9:0] SW;
+
+	center_light dut (CLOCK_50, SW[9], KEY[3], KEY[0], LEDR[6], LEDR[4], LEDR[5]);
+
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		CLOCK_50 <= 0;
+		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
+	end
+
+	initial begin
+										  repeat (1) @(posedge CLOCK_50);
+		SW[9] <= 1;
+		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
+		SW[9] <= 0;
+		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (1) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
+		$stop;
+	end
+endmodule
