@@ -1,167 +1,83 @@
-# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:42:11 on May 08,2023
-# vlog -reportprogress 300 ./DE1_SOC.sv 
-# -- Compiling module DE1_SoC
-# -- Compiling module DE1_SOC_testbench
-# ** Error: ./DE1_SOC.sv(53): In, out, or inout does not appear in port list: CLOCK_50.
-# ** Error: ./DE1_SOC.sv(54): In, out, or inout does not appear in port list: HEX5.
-# ** Error: ./DE1_SOC.sv(55): In, out, or inout does not appear in port list: LEDR.
-# ** Error: ./DE1_SOC.sv(56): In, out, or inout does not appear in port list: KEY.
-# ** Error: ./DE1_SOC.sv(57): In, out, or inout does not appear in port list: SW.
-# End time: 15:42:11 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 14
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./DE1_SOC.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./button_fsm.sv 
-# -- Compiling module button_fsm
-# -- Compiling module button_fsm_testbench
-# 
-# Top level modules:
-# 	button_fsm_testbench
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./center_light.sv 
-# -- Compiling module center_light
-# -- Compiling module center_light_testbench
-# 
-# Top level modules:
-# 	center_light_testbench
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./normal_light.sv 
-# -- Compiling module normal_light
-# 
-# Top level modules:
-# 	normal_light
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./end_light_left.sv 
-# -- Compiling module end_light_left
-# 
-# Top level modules:
-# 	end_light_left
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
-# vlog -reportprogress 300 ./end_light_right.sv 
-# -- Compiling module end_light_right
-# 
-# Top level modules:
-# 	end_light_right
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:43:33 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:43:33 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:22:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:43:34 on May 08,2023
+# Start time: 22:22:18 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -172,112 +88,197 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Error: Cannot open macro file: DE1_SOC_wave.do
-# Error in macro ./runlab.do line 24
-# Cannot open macro file: DE1_SOC_wave.do
-#     while executing
-# "do DE1_SOC_wave.do"
-add wave -position end  sim:/DE1_SOC_testbench/CLOCK_50
-add wave -position 0  sim:/DE1_SOC_testbench/SW[9]
-add wave -position end  sim:/DE1_SOC_testbench/KEY[3]
-add wave -position end  sim:/DE1_SOC_testbench/KEY[0]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[9]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[8]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[7]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[6]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[5]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[4]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[3]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[2]
-add wave -position end  sim:/DE1_SOC_testbench/LEDR[1]
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(156)
+#    Time: 5250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 156
+add wave -position end  sim:/DE1_SOC_testbench/LEDR
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:46 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:23:46 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:46 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:23:46 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:46 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:23:46 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:46 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:23:46 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:46 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:23:47 on May 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:47 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:23:47 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:47 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:23:47 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:47 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:23:47 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:23:48 on May 08,2023, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:23:48 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(156)
+#    Time: 5250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 156
+add wave -position end  sim:/DE1_SOC_testbench/dut/cl/nl
+add wave -position end  sim:/DE1_SOC_testbench/dut/cl/nr
+add wave -position end  sim:/DE1_SOC_testbench/dut/cl/light_on
+add wave -position end  sim:/DE1_SOC_testbench/dut/cl/ps
+add wave -position end  sim:/DE1_SOC_testbench/dut/cl/ns
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Anna/Documents/ee-271/lab6/DE1_SOC_wave.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:37 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:01
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:53 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:44:38 on May 08,2023
+# Start time: 22:25:53 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:44:38 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:25:54 on May 08,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 15:44:39 on May 08,2023, Elapsed time: 0:01:05
-# Errors: 3, Warnings: 3
+# End time: 22:25:54 on May 08,2023, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:44:39 on May 08,2023
+# Start time: 22:25:54 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -288,102 +289,292 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(79)
-#    Time: 2250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 79
-add wave -position end  sim:/DE1_SOC_testbench/dut/elr/winner
-add wave -position end  sim:/DE1_SOC_testbench/dut/ell/winner
+# ** Note: $stop    : ./DE1_SOC.sv(156)
+#    Time: 5250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 156
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:53 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:26:53 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:53 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:26:53 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:53 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:54 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:54 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:54 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:54 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:26:54 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:26:54 on May 08,2023, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:26:54 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(156)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 156
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:29:02 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:02 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:29:03 on May 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 22:29:03 on May 08,2023, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:29:03 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(155)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 155
+add wave -position end  sim:/DE1_SOC_testbench/dut/ell/nr
+add wave -position end  sim:/DE1_SOC_testbench/dut/ell/light_on
+add wave -position end  sim:/DE1_SOC_testbench/dut/ell/ps
+add wave -position end  sim:/DE1_SOC_testbench/dut/ell/ns
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Anna/Documents/ee-271/lab6/DE1_SOC_wave.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:15 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:15 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:15 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:15 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:15 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:15 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:15 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:16 on May 08,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:31 on May 08,2023
+# Start time: 22:30:16 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:47:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:30:16 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 15:47:32 on May 08,2023, Elapsed time: 0:02:53
-# Errors: 0, Warnings: 3
+# End time: 22:30:16 on May 08,2023, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:47:32 on May 08,2023
+# Start time: 22:30:16 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -394,99 +585,93 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(79)
-#    Time: 2250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 79
+# ** Note: $stop    : ./DE1_SOC.sv(155)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 155
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:48:10 on May 08,2023
+# Start time: 22:34:56 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:48:10 on May 08,2023, Elapsed time: 0:00:00
+# End time: 22:34:56 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 15:48:11 on May 08,2023, Elapsed time: 0:00:39
-# Errors: 0, Warnings: 3
+# End time: 22:34:57 on May 08,2023, Elapsed time: 0:04:41
+# Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:48:11 on May 08,2023
+# Start time: 22:34:57 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -497,104 +682,691 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(83)
-#    Time: 3450 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 83
+# ** Note: $stop    : ./DE1_SOC.sv(155)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 155
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:23 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:39:23 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:39:24 on May 08,2023, Elapsed time: 0:04:27
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:39:24 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(168)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 168
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:41:06 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:41:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:41:07 on May 08,2023, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:41:07 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(168)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 168
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:13 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:42:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:13 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:42:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:13 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:42:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:13 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:42:14 on May 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:14 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:42:14 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:14 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:42:14 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:14 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:42:14 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:14 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:42:14 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:42:14 on May 08,2023, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:42:14 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(168)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 168
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:28 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:46:28 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:46:29 on May 08,2023, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:46:29 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(165)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 165
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:13 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:56:13 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:56:14 on May 08,2023, Elapsed time: 0:09:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:56:14 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(177)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 177
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/nl
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/nr
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/light_on
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/ps
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/ns
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/nl
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/nr
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/light_on
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/ps
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/ns
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Anna/Documents/ee-271/lab6/DE1_SOC_wave.do
-# WARNING: No extended dataflow license exists
-add wave -position 2  sim:/DE1_SOC_testbench/dut/btnL/pressed
-add wave -position 3  sim:/DE1_SOC_testbench/dut/btnR/pressed
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 22:59:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 22:59:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 22:59:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./center_light.sv 
+# -- Compiling module center_light
+# -- Compiling module center_light_testbench
+# 
+# Top level modules:
+# 	center_light_testbench
+# End time: 22:59:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./normal_light.sv 
+# -- Compiling module normal_light
+# 
+# Top level modules:
+# 	normal_light
+# End time: 22:59:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./end_light_left.sv 
+# -- Compiling module end_light_left
+# 
+# Top level modules:
+# 	end_light_left
+# End time: 22:59:06 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:06 on May 08,2023
+# vlog -reportprogress 300 ./end_light_right.sv 
+# -- Compiling module end_light_right
+# 
+# Top level modules:
+# 	end_light_right
+# End time: 22:59:07 on May 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:07 on May 08,2023
+# vlog -reportprogress 300 ./DE1_SOC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SOC_testbench
+# 
+# Top level modules:
+# 	DE1_SOC_testbench
+# End time: 22:59:07 on May 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:59:07 on May 08,2023, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
+# Start time: 22:59:07 on May 08,2023
+# Loading sv_std.std
+# Loading work.DE1_SOC_testbench
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.button_fsm
+# Loading work.end_light_right
+# Loading work.normal_light
+# Loading work.center_light
+# Loading work.end_light_left
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SOC.sv(177)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 177
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/l
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl4/r
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/l
+add wave -position end  sim:/DE1_SOC_testbench/dut/nl6/r
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Anna/Documents/ee-271/lab6/DE1_SOC_wave.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:31 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:51:31 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:32 on May 08,2023
+# Start time: 23:02:18 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:51:32 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:02:18 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 15:51:33 on May 08,2023, Elapsed time: 0:03:22
-# Errors: 0, Warnings: 4
+# End time: 23:02:19 on May 08,2023, Elapsed time: 0:03:12
+# Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:51:33 on May 08,2023
+# Start time: 23:02:19 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -605,99 +1377,93 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(83)
-#    Time: 3450 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 83
+# ** Note: $stop    : ./DE1_SOC.sv(177)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 177
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:03 on May 08,2023
+# Start time: 23:04:58 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:52:03 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:04:58 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 15:52:04 on May 08,2023, Elapsed time: 0:00:31
-# Errors: 0, Warnings: 3
+# End time: 23:04:59 on May 08,2023, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:52:04 on May 08,2023
+# Start time: 23:04:59 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -708,99 +1474,93 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(83)
-#    Time: 3850 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 83
+# ** Note: $stop    : ./DE1_SOC.sv(177)
+#    Time: 5650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 177
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./button_fsm.sv 
 # -- Compiling module button_fsm
 # -- Compiling module button_fsm_testbench
 # 
 # Top level modules:
 # 	button_fsm_testbench
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./center_light.sv 
 # -- Compiling module center_light
 # -- Compiling module center_light_testbench
 # 
 # Top level modules:
 # 	center_light_testbench
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./normal_light.sv 
 # -- Compiling module normal_light
 # 
 # Top level modules:
 # 	normal_light
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./end_light_left.sv 
 # -- Compiling module end_light_left
 # 
 # Top level modules:
 # 	end_light_left
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./end_light_right.sv 
 # -- Compiling module end_light_right
 # 
 # Top level modules:
 # 	end_light_right
-# End time: 15:52:34 on May 08,2023, Elapsed time: 0:00:00
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:34 on May 08,2023
+# Start time: 23:06:45 on May 08,2023
 # vlog -reportprogress 300 ./DE1_SOC.sv 
 # -- Compiling module DE1_SoC
 # -- Compiling module DE1_SOC_testbench
 # 
 # Top level modules:
 # 	DE1_SOC_testbench
-# End time: 15:52:35 on May 08,2023, Elapsed time: 0:00:01
+# End time: 23:06:45 on May 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 15:52:35 on May 08,2023, Elapsed time: 0:00:31
-# Errors: 0, Warnings: 3
+# End time: 23:06:46 on May 08,2023, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:52:35 on May 08,2023
+# Start time: 23:06:46 on May 08,2023
 # Loading sv_std.std
 # Loading work.DE1_SOC_testbench
 # Loading work.DE1_SoC
@@ -811,429 +1571,11 @@ do runlab.do
 # Loading work.normal_light
 # Loading work.center_light
 # Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(85)
-#    Time: 4450 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 85
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
+# ** Note: $stop    : ./DE1_SOC.sv(177)
+#    Time: 5250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
+# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 177
+# End time: 23:19:24 on May 08,2023, Elapsed time: 0:12:38
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./button_fsm.sv 
-# -- Compiling module button_fsm
-# -- Compiling module button_fsm_testbench
-# 
-# Top level modules:
-# 	button_fsm_testbench
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./center_light.sv 
-# -- Compiling module center_light
-# -- Compiling module center_light_testbench
-# 
-# Top level modules:
-# 	center_light_testbench
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./normal_light.sv 
-# -- Compiling module normal_light
-# 
-# Top level modules:
-# 	normal_light
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./end_light_left.sv 
-# -- Compiling module end_light_left
-# 
-# Top level modules:
-# 	end_light_left
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./end_light_right.sv 
-# -- Compiling module end_light_right
-# 
-# Top level modules:
-# 	end_light_right
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:55:30 on May 08,2023
-# vlog -reportprogress 300 ./DE1_SOC.sv 
-# -- Compiling module DE1_SoC
-# -- Compiling module DE1_SOC_testbench
-# 
-# Top level modules:
-# 	DE1_SOC_testbench
-# End time: 15:55:30 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:55:31 on May 08,2023, Elapsed time: 0:02:56
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:55:31 on May 08,2023
-# Loading sv_std.std
-# Loading work.DE1_SOC_testbench
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.button_fsm
-# Loading work.end_light_right
-# Loading work.normal_light
-# Loading work.center_light
-# Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(103)
-#    Time: 4450 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 103
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./button_fsm.sv 
-# -- Compiling module button_fsm
-# -- Compiling module button_fsm_testbench
-# 
-# Top level modules:
-# 	button_fsm_testbench
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./center_light.sv 
-# -- Compiling module center_light
-# -- Compiling module center_light_testbench
-# 
-# Top level modules:
-# 	center_light_testbench
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./normal_light.sv 
-# -- Compiling module normal_light
-# 
-# Top level modules:
-# 	normal_light
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./end_light_left.sv 
-# -- Compiling module end_light_left
-# 
-# Top level modules:
-# 	end_light_left
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./end_light_right.sv 
-# -- Compiling module end_light_right
-# 
-# Top level modules:
-# 	end_light_right
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:57:01 on May 08,2023
-# vlog -reportprogress 300 ./DE1_SOC.sv 
-# -- Compiling module DE1_SoC
-# -- Compiling module DE1_SOC_testbench
-# 
-# Top level modules:
-# 	DE1_SOC_testbench
-# End time: 15:57:01 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:57:02 on May 08,2023, Elapsed time: 0:01:31
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:57:02 on May 08,2023
-# Loading sv_std.std
-# Loading work.DE1_SOC_testbench
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.button_fsm
-# Loading work.end_light_right
-# Loading work.normal_light
-# Loading work.center_light
-# Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(118)
-#    Time: 1650 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 118
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:24 on May 08,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./button_fsm.sv 
-# -- Compiling module button_fsm
-# -- Compiling module button_fsm_testbench
-# 
-# Top level modules:
-# 	button_fsm_testbench
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./center_light.sv 
-# -- Compiling module center_light
-# -- Compiling module center_light_testbench
-# 
-# Top level modules:
-# 	center_light_testbench
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./normal_light.sv 
-# -- Compiling module normal_light
-# 
-# Top level modules:
-# 	normal_light
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./end_light_left.sv 
-# -- Compiling module end_light_left
-# 
-# Top level modules:
-# 	end_light_left
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./end_light_right.sv 
-# -- Compiling module end_light_right
-# 
-# Top level modules:
-# 	end_light_right
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:25 on May 08,2023
-# vlog -reportprogress 300 ./DE1_SOC.sv 
-# -- Compiling module DE1_SoC
-# -- Compiling module DE1_SOC_testbench
-# 
-# Top level modules:
-# 	DE1_SOC_testbench
-# End time: 15:58:25 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:58:26 on May 08,2023, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 15:58:26 on May 08,2023
-# Loading sv_std.std
-# Loading work.DE1_SOC_testbench
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.button_fsm
-# Loading work.end_light_right
-# Loading work.normal_light
-# Loading work.center_light
-# Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(118)
-#    Time: 2250 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 118
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./button_fsm.sv 
-# -- Compiling module button_fsm
-# -- Compiling module button_fsm_testbench
-# 
-# Top level modules:
-# 	button_fsm_testbench
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./center_light.sv 
-# -- Compiling module center_light
-# -- Compiling module center_light_testbench
-# 
-# Top level modules:
-# 	center_light_testbench
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./normal_light.sv 
-# -- Compiling module normal_light
-# 
-# Top level modules:
-# 	normal_light
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./end_light_left.sv 
-# -- Compiling module end_light_left
-# 
-# Top level modules:
-# 	end_light_left
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./end_light_right.sv 
-# -- Compiling module end_light_right
-# 
-# Top level modules:
-# 	end_light_right
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:10 on May 08,2023
-# vlog -reportprogress 300 ./DE1_SOC.sv 
-# -- Compiling module DE1_SoC
-# -- Compiling module DE1_SOC_testbench
-# 
-# Top level modules:
-# 	DE1_SOC_testbench
-# End time: 16:00:10 on May 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:00:11 on May 08,2023, Elapsed time: 0:01:45
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SOC_testbench 
-# Start time: 16:00:11 on May 08,2023
-# Loading sv_std.std
-# Loading work.DE1_SOC_testbench
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.button_fsm
-# Loading work.end_light_right
-# Loading work.normal_light
-# Loading work.center_light
-# Loading work.end_light_left
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(24): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut/ell File: ./end_light_left.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(45): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# ** Warning: (vsim-3839) ./DE1_SOC.sv(42): Variable '/DE1_SOC_testbench/dut/winner', driven via a port connection, is multiply driven. See ./DE1_SOC.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_testbench/dut File: ./DE1_SOC.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SOC.sv(125)
-#    Time: 1950 ps  Iteration: 1  Instance: /DE1_SOC_testbench
-# Break in Module DE1_SOC_testbench at ./DE1_SOC.sv line 125
-# End time: 16:01:12 on May 08,2023, Elapsed time: 0:01:01
-# Errors: 0, Warnings: 3

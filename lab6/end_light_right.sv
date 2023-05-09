@@ -2,7 +2,7 @@ module end_light_right (clk, reset, l, r, nl, light_on, winner);
 	input logic clk, reset;
 	input logic l, r, nl;
 	output logic light_on;
-	output logic [1:0] winner;
+	output logic winner;
 
 	enum { on, to_left, game_over, idle } ps, ns;
 
@@ -19,11 +19,14 @@ module end_light_right (clk, reset, l, r, nl, light_on, winner);
 					ns = on;
 				end
 			to_left:
-				if (r & ~l) begin
-					ns = on;
-				end
-				else if (l & ~r) begin
+				if (~nl) begin
 					ns = idle;
+				end
+				else if (l & ~r & nl) begin
+					ns = idle;
+				end
+				else if (r & ~l & nl) begin
+					ns = on;
 				end
 				else begin
 					ns = to_left;
@@ -43,8 +46,7 @@ module end_light_right (clk, reset, l, r, nl, light_on, winner);
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			ps <= idle;
-			light_on <= 1'b0;
-			winner <= 2'b00;
+			winner <= 0;
 		end
 		else begin
 			ps <= ns;
@@ -52,15 +54,12 @@ module end_light_right (clk, reset, l, r, nl, light_on, winner);
 				on: begin
 					light_on <= 1'b1;
 				end
-				to_left: begin
+				to_left, idle: begin
 					light_on <= 1'b0;
 				end
 				game_over: begin
 					light_on <= 1'b0;
-					winner <= 2'b10;
-				end
-				idle: begin
-					light_on <= light_on;
+					winner <= 1'b1;
 				end
 			endcase
 		end

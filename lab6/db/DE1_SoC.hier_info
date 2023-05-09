@@ -1,26 +1,26 @@
 |DE1_SoC
 CLOCK_50 => CLOCK_50.IN13
-HEX5[0] <= <VCC>
-HEX5[1] <= <VCC>
-HEX5[2] <= <VCC>
-HEX5[3] <= <VCC>
-HEX5[4] <= <VCC>
-HEX5[5] <= <VCC>
-HEX5[6] <= <VCC>
-KEY[0] => r.DATAA
+HEX5[0] << HEX5[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[1] << HEX5[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[2] << HEX5[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[3] << HEX5[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[4] << HEX5[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[5] << HEX5[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[6] << HEX5[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => r.DATAIN
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
-KEY[3] => l.DATAA
-LEDR[0] <= <GND>
-LEDR[1] <= LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= LEDR[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= LEDR[3].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] <= LEDR[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] <= LEDR[5].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[6] <= LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] <= LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] <= LEDR[8].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[9] <= LEDR[9].DB_MAX_OUTPUT_PORT_TYPE
+KEY[3] => l.DATAIN
+LEDR[0] << <GND>
+LEDR[1] << end_light_right:elr.port5
+LEDR[2] << normal_light:nl2.port6
+LEDR[3] << normal_light:nl3.port6
+LEDR[4] << normal_light:nl4.port6
+LEDR[5] << center_light:cl.port6
+LEDR[6] << normal_light:nl6.port6
+LEDR[7] << normal_light:nl7.port6
+LEDR[8] << normal_light:nl8.port6
+LEDR[9] << end_light_left:ell.port5
 SW[0] => ~NO_FANOUT~
 SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
@@ -152,9 +152,8 @@ pressed <= pressed.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE1_SoC|end_light_right:elr
-clk => winner[0]~reg0.CLK
-clk => winner[1]~reg0.CLK
 clk => light_on~reg0.CLK
+clk => winner~reg0.CLK
 clk => ps[0].CLK
 clk => ps[1].CLK
 clk => ps[2].CLK
@@ -189,17 +188,19 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
 reset => winner.OUTPUTSELECT
-reset => winner.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
-nl => Selector0.IN3
+nl => always0.IN1
+nl => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN2
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
-winner[0] <= winner[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-winner[1] <= winner[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+winner <= winner~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE1_SoC|normal_light:nl2
@@ -238,13 +239,21 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -285,13 +294,21 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -332,13 +349,21 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -384,8 +409,16 @@ l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -426,13 +459,21 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -473,13 +514,21 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -520,21 +569,28 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
+nl => always0.IN1
+nl => always0.IN1
 nl => ns.OUTPUTSELECT
-nl => Selector0.IN3
+nl => ns.OUTPUTSELECT
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN1
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE1_SoC|end_light_left:ell
-clk => winner[0]~reg0.CLK
-clk => winner[1]~reg0.CLK
 clk => light_on~reg0.CLK
+clk => winner~reg0.CLK
 clk => ps[0].CLK
 clk => ps[1].CLK
 clk => ps[2].CLK
@@ -569,16 +625,18 @@ clk => ps[30].CLK
 clk => ps[31].CLK
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
-reset => light_on.OUTPUTSELECT
 reset => winner.OUTPUTSELECT
-reset => winner.OUTPUTSELECT
+reset => light_on~reg0.ENA
 l => always0.IN0
 l => always0.IN0
 r => always0.IN1
 r => always0.IN1
-nr => Selector0.IN3
+nr => always0.IN1
+nr => always0.IN1
+nr => ns.OUTPUTSELECT
+nr => ns.OUTPUTSELECT
+nr => Selector0.IN2
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
-winner[0] <= winner[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-winner[1] <= winner[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+winner <= winner~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

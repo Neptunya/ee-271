@@ -18,21 +18,27 @@ module center_light (clk, reset, l, r, nl, nr, light_on);
 					ns = on;
 				end
 			to_left:
-				if (r & ~l) begin
-					ns = on;
-				end
-				else if (l & ~r) begin
+				if (~nl) begin
 					ns = idle;
+				end
+				else if (l & ~r & nl) begin
+					ns = idle;
+				end
+				else if (r & ~l & nl) begin
+					ns = on;
 				end
 				else begin
 					ns = to_left;
 				end
 			to_right:
-				if (l & ~r) begin
-					ns = on;
-				end
-				else if (r & ~l) begin
+				if (~nr) begin
 					ns = idle;
+				end
+				else if (r & ~l & nr) begin
+					ns = idle;
+				end
+				else if (l & ~r & nr) begin
+					ns = on;
 				end
 				else begin
 					ns = to_right;
@@ -53,17 +59,15 @@ module center_light (clk, reset, l, r, nl, nr, light_on);
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			ps <= on;
-			light_on <= 1'b1; // set light_on to default value
+			light_on <= 1;
 		end
 		else begin
 			ps <= ns;
 			case (ps)
 				on:
 					light_on <= 1'b1;
-				to_left, to_right:
+				to_left, to_right, idle:
 					light_on <= 1'b0;
-				idle:
-					light_on <= light_on; // keep light_on the same
 			endcase
 		end
 	end

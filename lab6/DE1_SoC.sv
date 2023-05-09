@@ -4,8 +4,8 @@ module DE1_SoC (CLOCK_50, HEX5, KEY, LEDR, SW);
 	output logic [9:0] LEDR;
 	input logic [3:0] KEY; // True when not pressed, False when pressed
 	input logic [9:0] SW;
-	logic l_btn, r_btn, l_pressed, r_pressed, l, r;
-	logic [1:0] winner;
+	logic l_btn, r_btn, l_pressed, r_pressed, l, r, l_winner, r_winner, winner;
+	logic led1, led2, led3, led4, led5, led6, led7, led8, led9;
 
 	dff_pair dff_pairL(.clk(CLOCK_50), .d(l), .q(l_btn));
 	dff_pair dff_pairR(.clk(CLOCK_50), .d(r), .q(r_btn));
@@ -13,47 +13,64 @@ module DE1_SoC (CLOCK_50, HEX5, KEY, LEDR, SW);
 	button_fsm btnL(.clk(CLOCK_50), .reset(SW[9]), .button(l_btn), .pressed(l_pressed));
 	button_fsm btnR(.clk(CLOCK_50), .reset(SW[9]), .button(r_btn), .pressed(r_pressed));
 
-	end_light_right elr(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[2], LEDR[1], winner);
-	normal_light nl2(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[3], LEDR[1], LEDR[2]);
-	normal_light nl3(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[4], LEDR[2], LEDR[3]);
-	normal_light nl4(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[5], LEDR[3], LEDR[4]);
-	center_light cl(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[6], LEDR[4], LEDR[5]);
-	normal_light nl6(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[7], LEDR[5], LEDR[6]);
-	normal_light nl7(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[8], LEDR[6], LEDR[7]);
-	normal_light nl8(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[9], LEDR[7], LEDR[8]);
-	end_light_left ell(CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[8], LEDR[9], winner);
+	end_light_right elr(CLOCK_50, SW[9], l_pressed, r_pressed, led2, LEDR[1], r_winner);
+	normal_light nl2(CLOCK_50, SW[9], l_pressed, r_pressed, led3, led1, LEDR[2]);
+	normal_light nl3(CLOCK_50, SW[9], l_pressed, r_pressed, led4, led2, LEDR[3]);
+	normal_light nl4(CLOCK_50, SW[9], l_pressed, r_pressed, led5, led3, LEDR[4]);
+	center_light cl(CLOCK_50, SW[9], l_pressed, r_pressed, led6, led4, LEDR[5]);
+	normal_light nl6(CLOCK_50, SW[9], l_pressed, r_pressed, led7, led5, LEDR[6]);
+	normal_light nl7(CLOCK_50, SW[9], l_pressed, r_pressed, led8, led6, LEDR[7]);
+	normal_light nl8(CLOCK_50, SW[9], l_pressed, r_pressed, led9, led7, LEDR[8]);
+	end_light_left ell(CLOCK_50, SW[9], l_pressed, r_pressed, led8, LEDR[9], l_winner);
 
-	always_comb begin
+	always_ff @(posedge CLOCK_50) begin
+		if (SW[9]) begin
+			led1 <= 0;
+			led2 <= 0;
+			led3 <= 0;
+			led4 <= 0;
+			led5 <= 0;
+			led6 <= 0;
+			led7 <= 0;
+			led8 <= 0;
+			led9 <= 0;
+		end
+		
+		led1 <= LEDR[1];
+		led2 <= LEDR[2];
+		led3 <= LEDR[3];
+		led4 <= LEDR[4];
+		led5 <= LEDR[5];
+		led6 <= LEDR[6];
+		led7 <= LEDR[7];
+		led8 <= LEDR[8];
+		led9 <= LEDR[9];
+		
+		l <= KEY[3];
+		r <= KEY[0];
+		
+		winner <= l_winner || r_winner;
 		case (winner)
-			2'b01: begin
-				HEX5 <= 7'b1111111;
-			end
-			2'b10: begin
-				HEX5 <= 7'b1111111;
+			1'b1: begin
+				if (l_winner) begin
+					HEX5 <= 7'b1111001;
+				end
+				else begin
+					HEX5 <= 7'b0100100;
+				end
 			end
 			default: begin
 				HEX5 <= 7'b1111111;
 			end
 		endcase
 	end
-
-	always_ff @(posedge CLOCK_50) begin
-		if (SW[9]) begin
-			winner <= 2'b00;
-		end
-		else begin
-			winner <= winner;
-			l <= KEY[3];
-			r <= KEY[0];
-		end
-	end
 endmodule
 
 module DE1_SOC_testbench();
-	logic CLOCK_50; // 50MHz clock.
+	logic CLOCK_50; 
 	logic [6:0] HEX5;
 	logic [9:0] LEDR;
-	logic [3:0] KEY; // True when not pressed, False when pressed
+	logic [3:0] KEY; 
 	logic [9:0] SW;
 
 	DE1_SoC dut (CLOCK_50, HEX5, KEY, LEDR, SW);
@@ -71,7 +88,26 @@ module DE1_SOC_testbench();
 		SW[9] <= 0;
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 
-		/* left win w/overshooting
+		// back and forth
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		
+		
+		/* left win w/overshooting and back
 		KEY[3] <= 1; KEY[0] <= 0; repeat (5) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 1; KEY[0] <= 0; repeat (5) @(posedge CLOCK_50);
@@ -83,8 +119,13 @@ module DE1_SOC_testbench();
 		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		*/
+		
 
 		/* right win w/overshooting
 		KEY[3] <= 0; KEY[0] <= 1; repeat (5) @(posedge CLOCK_50);
