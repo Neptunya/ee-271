@@ -1,4 +1,208 @@
-|center_light
+|DE1_SoC
+CLOCK_50 => CLOCK_50.IN13
+HEX5[0] <= <VCC>
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+KEY[0] => r.DATAA
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => l.DATAA
+LEDR[0] <= <GND>
+LEDR[1] <= LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LEDR[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LEDR[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= LEDR[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= LEDR[9].DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN11
+
+
+|DE1_SoC|dff_pair:dff_pairL
+clk => clk.IN2
+d => d.IN2
+q <= dff_single:dff2.q
+
+
+|DE1_SoC|dff_pair:dff_pairL|dff_single:dff1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|dff_pair:dff_pairL|dff_single:dff2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|dff_pair:dff_pairR
+clk => clk.IN2
+d => d.IN2
+q <= dff_single:dff2.q
+
+
+|DE1_SoC|dff_pair:dff_pairR|dff_single:dff1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|dff_pair:dff_pairR|dff_single:dff2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|button_fsm:btnL
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+button => pressed.DATAB
+button => ns[0].DATAB
+button => Selector0.IN3
+pressed <= pressed.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|button_fsm:btnR
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+button => pressed.DATAB
+button => ns[0].DATAB
+button => Selector0.IN3
+pressed <= pressed.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|end_light_right:elr
+clk => winner[0]~reg0.CLK
+clk => winner[1]~reg0.CLK
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+reset => winner.OUTPUTSELECT
+reset => winner.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => Selector0.IN3
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+winner[0] <= winner[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+winner[1] <= winner[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normal_light:nl2
 clk => light_on~reg0.CLK
 clk => ps[0].CLK
 clk => ps[1].CLK
@@ -43,5 +247,338 @@ nl => ns.OUTPUTSELECT
 nl => Selector0.IN3
 nr => ns.DATAA
 light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normal_light:nl3
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN3
+nr => ns.DATAA
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normal_light:nl4
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN3
+nr => ns.DATAA
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|center_light:cl
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN3
+nr => ns.DATAA
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normal_light:nl6
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN3
+nr => ns.DATAA
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normal_light:nl7
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN3
+nr => ns.DATAA
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|normal_light:nl8
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nl => ns.OUTPUTSELECT
+nl => Selector0.IN3
+nr => ns.DATAA
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|end_light_left:ell
+clk => winner[0]~reg0.CLK
+clk => winner[1]~reg0.CLK
+clk => light_on~reg0.CLK
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => light_on.OUTPUTSELECT
+reset => winner.OUTPUTSELECT
+reset => winner.OUTPUTSELECT
+l => always0.IN0
+l => always0.IN0
+r => always0.IN1
+r => always0.IN1
+nr => Selector0.IN3
+light_on <= light_on~reg0.DB_MAX_OUTPUT_PORT_TYPE
+winner[0] <= winner[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+winner[1] <= winner[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

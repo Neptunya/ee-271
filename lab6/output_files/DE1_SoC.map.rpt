@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Sun May 07 22:39:25 2023
+Mon May 08 15:43:27 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,10 +15,11 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+ 10. Port Connectivity Checks: "dff_pair:dff_pairL|dff_single:dff1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,14 +46,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 07 22:39:25 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 08 15:43:27 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
-; Top-level Entity Name           ; center_light                                ;
+; Top-level Entity Name           ; DE1_SoC                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 3                                           ;
-; Total pins                      ; 7                                           ;
+; Total registers                 ; 35                                          ;
+; Total pins                      ; 32                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -71,7 +72,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; center_light       ; DE1_SoC            ;
+; Top-level entity name                                                           ; DE1_SoC            ; DE1_SoC            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -157,72 +158,104 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; center_light.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/center_light.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; normal_light.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/normal_light.sv    ;         ;
+; end_light_right.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/end_light_right.sv ;         ;
+; end_light_left.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/end_light_left.sv  ;         ;
+; dff_pair.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/dff_pair.sv        ;         ;
+; button_fsm.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/button_fsm.sv      ;         ;
+; dff_single.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/dff_single.sv      ;         ;
+; center_light.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/center_light.sv    ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv         ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 3     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 4     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 2     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 1     ;
-;     -- <=3 input functions                  ; 1     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 3     ;
-;                                             ;       ;
-; I/O pins                                    ; 7     ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; ps[0] ;
-; Maximum fan-out                             ; 3     ;
-; Total fan-out                               ; 32    ;
-; Average fan-out                             ; 1.52  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 22             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 33             ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 9              ;
+;     -- 5 input functions                    ; 9              ;
+;     -- 4 input functions                    ; 0              ;
+;     -- <=3 input functions                  ; 15             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 35             ;
+;                                             ;                ;
+; I/O pins                                    ; 32             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 35             ;
+; Total fan-out                               ; 286            ;
+; Average fan-out                             ; 2.17           ;
++---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; |center_light              ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 7    ; 0            ; |center_light       ; center_light ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-----------------+--------------+
+; |DE1_SoC                   ; 33 (0)              ; 35 (2)                    ; 0                 ; 0          ; 32   ; 0            ; |DE1_SoC                                    ; DE1_SoC         ; work         ;
+;    |button_fsm:btnL|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|button_fsm:btnL                    ; button_fsm      ; work         ;
+;    |button_fsm:btnR|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|button_fsm:btnR                    ; button_fsm      ; work         ;
+;    |center_light:cl|       ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|center_light:cl                    ; center_light    ; work         ;
+;    |dff_pair:dff_pairL|    ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|dff_pair:dff_pairL                 ; dff_pair        ; work         ;
+;       |dff_single:dff2|    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|dff_pair:dff_pairL|dff_single:dff2 ; dff_single      ; work         ;
+;    |dff_pair:dff_pairR|    ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|dff_pair:dff_pairR                 ; dff_pair        ; work         ;
+;       |dff_single:dff2|    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|dff_pair:dff_pairR|dff_single:dff2 ; dff_single      ; work         ;
+;    |end_light_left:ell|    ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|end_light_left:ell                 ; end_light_left  ; work         ;
+;    |end_light_right:elr|   ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|end_light_right:elr                ; end_light_right ; work         ;
+;    |normal_light:nl2|      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|normal_light:nl2                   ; normal_light    ; work         ;
+;    |normal_light:nl3|      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|normal_light:nl3                   ; normal_light    ; work         ;
+;    |normal_light:nl4|      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|normal_light:nl4                   ; normal_light    ; work         ;
+;    |normal_light:nl6|      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|normal_light:nl6                   ; normal_light    ; work         ;
+;    |normal_light:nl7|      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|normal_light:nl7                   ; normal_light    ; work         ;
+;    |normal_light:nl8|      ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|normal_light:nl8                   ; normal_light    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; ps[2..31]                              ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 30 ;                                        ;
-+----------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; end_light_left:ell|ps[2..31]            ; Stuck at GND due to stuck port data_in ;
+; normal_light:nl8|ps[2..31]              ; Stuck at GND due to stuck port data_in ;
+; normal_light:nl7|ps[2..31]              ; Stuck at GND due to stuck port data_in ;
+; normal_light:nl6|ps[2..31]              ; Stuck at GND due to stuck port data_in ;
+; center_light:cl|ps[2..31]               ; Stuck at GND due to stuck port data_in ;
+; normal_light:nl4|ps[2..31]              ; Stuck at GND due to stuck port data_in ;
+; normal_light:nl3|ps[2..31]              ; Stuck at GND due to stuck port data_in ;
+; normal_light:nl2|ps[2..31]              ; Stuck at GND due to stuck port data_in ;
+; end_light_right:elr|ps[2..31]           ; Stuck at GND due to stuck port data_in ;
+; button_fsm:btnR|ps[2..31]               ; Stuck at GND due to stuck port data_in ;
+; button_fsm:btnL|ps[2..31]               ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 330 ;                                        ;
++-----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -230,14 +263,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 35    ;
+; Number of registers using Synchronous Clear  ; 14    ;
+; Number of registers using Synchronous Load   ; 17    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dff_pair:dff_pairL|dff_single:dff1"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -245,17 +287,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 3                           ;
-;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 4                           ;
-;     normal            ; 4                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 1                           ;
-;         6 data inputs ; 2                           ;
-; boundary_port         ; 7                           ;
+; arriav_ff             ; 35                          ;
+;     ENA               ; 2                           ;
+;     SCLR              ; 14                          ;
+;     SLD               ; 17                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 35                          ;
+;     normal            ; 35                          ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 13                          ;
+;         5 data inputs ; 9                           ;
+;         6 data inputs ; 9                           ;
+; boundary_port         ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.23                        ;
+; Average LUT depth     ; 1.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -274,9 +321,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun May 07 22:39:17 2023
+    Info: Processing started: Mon May 08 15:43:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file normal_light.sv
+    Info (12023): Found entity 1: normal_light File: C:/Users/Anna/Documents/ee-271/lab6/normal_light.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file end_light_right.sv
+    Info (12023): Found entity 1: end_light_right File: C:/Users/Anna/Documents/ee-271/lab6/end_light_right.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file end_light_left.sv
+    Info (12023): Found entity 1: end_light_left File: C:/Users/Anna/Documents/ee-271/lab6/end_light_left.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dff_pair.sv
     Info (12023): Found entity 1: dff_pair File: C:/Users/Anna/Documents/ee-271/lab6/dff_pair.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file button_fsm.sv
@@ -287,20 +340,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file dff_sin
 Info (12021): Found 2 design units, including 2 entities, in source file center_light.sv
     Info (12023): Found entity 1: center_light File: C:/Users/Anna/Documents/ee-271/lab6/center_light.sv Line: 1
     Info (12023): Found entity 2: center_light_testbench File: C:/Users/Anna/Documents/ee-271/lab6/center_light.sv Line: 71
-Info (12127): Elaborating entity "center_light" for the top level hierarchy
+Info (12021): Found 2 design units, including 2 entities, in source file de1_soc.sv
+    Info (12023): Found entity 1: DE1_SoC File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 1
+    Info (12023): Found entity 2: DE1_SOC_testbench File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 52
+Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
+Info (10264): Verilog HDL Case Statement information at DE1_SoC.sv(27): all case item expressions in this case statement are onehot File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 27
+Info (12128): Elaborating entity "dff_pair" for hierarchy "dff_pair:dff_pairL" File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 10
+Info (12128): Elaborating entity "dff_single" for hierarchy "dff_pair:dff_pairL|dff_single:dff1" File: C:/Users/Anna/Documents/ee-271/lab6/dff_pair.sv Line: 6
+Info (12128): Elaborating entity "button_fsm" for hierarchy "button_fsm:btnL" File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 13
+Info (12128): Elaborating entity "end_light_right" for hierarchy "end_light_right:elr" File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 16
+Info (12128): Elaborating entity "normal_light" for hierarchy "normal_light:nl2" File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 17
+Info (12128): Elaborating entity "center_light" for hierarchy "center_light:cl" File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 20
+Info (12128): Elaborating entity "end_light_left" for hierarchy "end_light_left:ell" File: C:/Users/Anna/Documents/ee-271/lab6/DE1_SoC.sv Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee-271/lab6/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 4 logic cells
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 39 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Sun May 07 22:39:25 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Mon May 08 15:43:27 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+

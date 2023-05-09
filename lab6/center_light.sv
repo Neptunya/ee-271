@@ -2,9 +2,9 @@ module center_light (clk, reset, l, r, nl, nr, light_on);
 	input logic clk, reset;
 	input logic l, r, nl, nr;
 	output logic light_on;
-	
+
 	enum { on, to_left, to_right, idle } ps, ns;
-	
+
 	always_comb begin
 		case (ps)
 			on:
@@ -17,7 +17,7 @@ module center_light (clk, reset, l, r, nl, nr, light_on);
 				else begin
 					ns = on;
 				end
-			to_left: 
+			to_left:
 				if (r & ~l) begin
 					ns = on;
 				end
@@ -49,7 +49,7 @@ module center_light (clk, reset, l, r, nl, nr, light_on);
 				end
 		endcase
 	end
-	
+
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			ps <= on;
@@ -80,7 +80,7 @@ module center_light_testbench();
 
 	button_fsm btnL(.clk(CLOCK_50), .reset(SW[9]), .button(l_btn), .pressed(l_pressed));
 	button_fsm btnR(.clk(CLOCK_50), .reset(SW[9]), .button(r_btn), .pressed(r_pressed));
-	
+
 	center_light dut (CLOCK_50, SW[9], l_pressed, r_pressed, LEDR[6], LEDR[4], LEDR[5]);
 
 	parameter CLOCK_PERIOD = 100;
