@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Anna/Documents/ee-271/lab5a
 vclock_divider
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1683002059
+Z2 !s110 1683513962
 !i10b 1
 !s100 HPB25k66knN<N@CDGQk3A2
 IkD`Am7g9:;=`?a1_`6?581
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1683002059.000000
+Z6 !s108 1683513962.000000
 !s107 ./clock_divider.sv|
 !s90 -reportprogress|300|./clock_divider.sv|
 !i113 1

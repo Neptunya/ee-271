@@ -88,7 +88,7 @@ module DE1_SOC_testbench();
 		SW[9] <= 0;
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 
-		// back and forth
+		/* back and forth
 		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
@@ -105,7 +105,7 @@ module DE1_SOC_testbench();
 		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
-		
+		*/
 		
 		/* left win w/overshooting and back
 		KEY[3] <= 1; KEY[0] <= 0; repeat (5) @(posedge CLOCK_50);
@@ -141,29 +141,15 @@ module DE1_SOC_testbench();
 		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
 		*/
+		
 
-		/* spam click test
-		KEY[3] <= 0; KEY[0] <= 1; repeat (2) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 1; repeat (2) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 1; repeat (2) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 1; repeat (2) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 1; repeat (2) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 1; repeat (2) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 0; repeat (1) @(posedge CLOCK_50);
-		*/
-
-		/* overlapping inputs test
+		// overlapping inputs test
 		KEY[3] <= 1; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 0; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
-		KEY[3] <= 0; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
+		KEY[3] <= 0; KEY[0] <= 1; repeat (5) @(posedge CLOCK_50);
 		KEY[3] <= 1; KEY[0] <= 1; repeat (3) @(posedge CLOCK_50);
 		KEY[3] <= 1; KEY[0] <= 0; repeat (3) @(posedge CLOCK_50);
-		*/
+		
 		$stop;
 	end
 endmodule

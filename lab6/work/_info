@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Anna/Documents/ee-271/lab6
 vbutton_fsm
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1683612405
+Z2 !s110 1683654846
 !i10b 1
 !s100 kVd6:5VmXBWB`hL`L5gzN1
 IhT@8HOjUK89>@O5D17Yd92
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1683612405.000000
+Z9 !s108 1683654846.000000
 Z10 !s107 ./button_fsm.sv|
 Z11 !s90 -reportprogress|300|./button_fsm.sv|
 !i113 1
@@ -104,13 +104,13 @@ vDE1_SoC
 R1
 R2
 !i10b 1
-!s100 ^7ZO2_faBGh]3:TCEMLQf0
-I0j4VK`gMR]dBMhZYE5][`3
+!s100 7^o=cInd5z1PYFaPOzm@V2
+IcE8I;RL]:eHX5`1H;>Ol_2
 R3
 Z19 !s105 DE1_SOC_sv_unit
 S1
 R0
-Z20 w1683612396
+Z20 w1683654833
 Z21 8./DE1_SOC.sv
 Z22 F./DE1_SOC.sv
 L0 1
@@ -128,8 +128,8 @@ vDE1_SOC_testbench
 R1
 R2
 !i10b 1
-!s100 dZESM]F6WfG`UmB_;l]VL1
-IKBIkGjzW<FH9O<`8L0Xae1
+!s100 D3^KhBA6zC@zGX^LbXFBc0
+IMD8g5[1M3Af`^JR>OHIN10
 R3
 R19
 S1
@@ -137,7 +137,7 @@ R0
 R20
 R21
 R22
-L0 79
+L0 69
 R8
 r1
 !s85 0
@@ -173,7 +173,7 @@ R9
 R12
 vdff_single
 R1
-R2
+!s110 1683654845
 !i10b 1
 !s100 [XM62d1=>B35==RbgQZU43
 IBcWGF@cCUW<B_9B?;^m?52
@@ -189,7 +189,7 @@ R8
 r1
 !s85 0
 31
-R9
+!s108 1683654845.000000
 !s107 ./dff_single.sv|
 !s90 -reportprogress|300|./dff_single.sv|
 !i113 1
@@ -198,13 +198,13 @@ vend_light_left
 R1
 R2
 !i10b 1
-!s100 YkDa6W5UAJT?m0_FI[=B31
-IVZfWzUBPh:lAYlQVYV:nO2
+!s100 kA6C4_KS10ZJ_N`4NOb^U3
+IOP8YIkIA_czhaTdbmMk^L3
 R3
 !s105 end_light_left_sv_unit
 S1
 R0
-w1683612374
+w1683612818
 8./end_light_left.sv
 F./end_light_left.sv
 L0 1
@@ -221,13 +221,13 @@ vend_light_right
 R1
 R2
 !i10b 1
-!s100 k<ge1<MJiUMN<;CAQU6g51
-I:4ZTB9nEK?4edBm3i43D;3
+!s100 U[6LAB]MgaJkaHH<:3C4i2
+II48=N3YPcUE1g4N^h6[3?0
 R3
 !s105 end_light_right_sv_unit
 S1
 R0
-w1683611530
+w1683612802
 8./end_light_right.sv
 F./end_light_right.sv
 L0 1
