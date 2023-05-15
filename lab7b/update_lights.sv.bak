@@ -1,0 +1,13 @@
+module update_lights (clk, reset, l, r);
+	input logic clk, reset, l ,r ;
+	logic [4:0] current_led, previous_led;
+	always_comb begin
+		previous_led = current_led;
+		left_right_stay lrs(.led_on(current_led), .clk(clk), .reset(reset), .l(~l), .r(~r), .led_start(previous_led));
+	end
+	
+	always_ff @(posedge CLOCK_50) begin
+		LEDR[previous_led] <= 1'b0;
+		LEDR[current_led] <= 1'b1;
+	end
+endmodule
