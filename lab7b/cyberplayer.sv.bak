@@ -1,0 +1,24 @@
+module cyberplayer (clk, reset, ctrl, advance);
+	input logic clk, reset;
+	input logic [8:0] ctrl;
+	output logic advance;
+	logic [9:0] lvl;
+
+	assign lvl[9] = 0;
+	assign lvl[8] = ctrl[8];
+	assign lvl[7] = ctrl[7];
+	assign lvl[6] = ctrl[6];
+	assign lvl[5] = ctrl[5];
+	assign lvl[4] = ctrl[4];
+	assign lvl[3] = ctrl[3];
+	assign lvl[2] = ctrl[2];
+	assign lvl[1] = ctrl[1];
+	assign lvl[0] = ctrl[0];
+	
+	lsfr_10(clk, reset, q);
+	comparator_10(lvl, q, lvl_greater);
+
+	always_ff @(posedge clk) begin
+		advance <= lvl_greater;
+	end
+endmodule

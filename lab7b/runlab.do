@@ -12,6 +12,10 @@ vlog "./normal_light.sv"
 vlog "./end_light_left.sv"
 vlog "./end_light_right.sv"
 vlog "./score_counter.sv"
+vlog "./clock_divider.sv"
+vlog "./cyberplayer.sv"
+vlog "./comparator_10.sv"
+vlog "./lfsr_10.sv"
 vlog "./DE1_SOC.sv"
 
 # Call vsim to invoke simulator

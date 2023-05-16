@@ -2,11 +2,11 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /lfsr_10_testbench/CLOCK_50
 add wave -noupdate {/lfsr_10_testbench/SW[9]}
-add wave -noupdate /lfsr_10_testbench/d
+add wave -noupdate /lfsr_10_testbench/dut/d
 add wave -noupdate /lfsr_10_testbench/q_n
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {1654 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -21,4 +21,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {0 ps} {8 ns}
