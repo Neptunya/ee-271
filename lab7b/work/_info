@@ -173,15 +173,15 @@ R10
 R13
 vdff_single
 R1
-R2
+Z26 !s110 1684187706
 !i10b 1
-!s100 [XM62d1=>B35==RbgQZU43
-IBcWGF@cCUW<B_9B?;^m?52
+!s100 FC037IPXA@9WQImoFfPbn0
+IOZ1[@ZZ9SaB4TU8LMz6YX0
 R3
 !s105 dff_single_sv_unit
 S1
-R5
-w1683509558
+Z27 dC:/Users/Anna/Documents/ee-271/lab7b
+w1684170286
 8./dff_single.sv
 F./dff_single.sv
 L0 1
@@ -189,7 +189,7 @@ R9
 r1
 !s85 0
 31
-R10
+Z28 !s108 1684187706.000000
 !s107 ./dff_single.sv|
 !s90 -reportprogress|300|./dff_single.sv|
 !i113 1
@@ -242,48 +242,94 @@ R10
 R13
 vleft_right_stay
 R1
-Z26 !s110 1683514880
+Z29 !s110 1683514880
 !i10b 1
 !s100 LR?1Nne6Td`j4XBzL3z9e0
 IE:mbUKAc>QSZ^zMfE^SWb3
 R3
-Z27 !s105 left_right_stay_sv_unit
+Z30 !s105 left_right_stay_sv_unit
 S1
 R0
-Z28 w1683514871
-Z29 8./left_right_stay.sv
-Z30 F./left_right_stay.sv
+Z31 w1683514871
+Z32 8./left_right_stay.sv
+Z33 F./left_right_stay.sv
 L0 1
 R9
 r1
 !s85 0
 31
-Z31 !s108 1683514880.000000
-Z32 !s107 ./left_right_stay.sv|
-Z33 !s90 -reportprogress|300|./left_right_stay.sv|
+Z34 !s108 1683514880.000000
+Z35 !s107 ./left_right_stay.sv|
+Z36 !s90 -reportprogress|300|./left_right_stay.sv|
 !i113 1
 R13
 vleft_right_stay_testbench
 R1
-R26
+R29
 !i10b 1
 !s100 KeX=bZj5GzaD4dnF8MEN`1
 IC?aTf9lVzjm0@7i_5l6C;3
 R3
-R27
+R30
 S1
 R0
-R28
-R29
-R30
+R31
+R32
+R33
 L0 29
 R9
 r1
 !s85 0
 31
-R31
-R32
-R33
+R34
+R35
+R36
+!i113 1
+R13
+vlfsr_10
+R1
+R26
+!i10b 1
+!s100 X20;0DhlC9eEWXIA5gm[^0
+IR5bCMBnJ0e@nVf9`FYHbF0
+R3
+Z37 !s105 lfsr_10_sv_unit
+S1
+R27
+Z38 w1684187696
+Z39 8./lfsr_10.sv
+Z40 F./lfsr_10.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R28
+Z41 !s107 ./lfsr_10.sv|
+Z42 !s90 -reportprogress|300|./lfsr_10.sv|
+!i113 1
+R13
+vlfsr_10_testbench
+R1
+R26
+!i10b 1
+!s100 2EI>Ue7mZSHn^`ZXo9C[H1
+I>=L2NNaV]^GnnID359gom2
+R3
+R37
+S1
+R27
+R38
+R39
+R40
+L0 30
+R9
+r1
+!s85 0
+31
+R28
+R41
+R42
 !i113 1
 R13
 vnormal_light

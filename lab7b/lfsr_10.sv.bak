@@ -1,0 +1,29 @@
+module lfsr_10 (clk, reset, q, q_next);
+	input logic [9:0] q;
+	input logic clk, reset;
+	output logic [9:0] q_next;
+	logic d;
+
+	assign d = ~(q[6] ^ q[9]);
+
+	dff_single(clk, d, q_next[0]);
+	dff_single(clk, q[0], q_next[1]);
+	dff_single(clk, q[1], q_next[2]);
+	dff_single(clk, q[2], q_next[3]);
+	dff_single(clk, q[3], q_next[4]);
+	dff_single(clk, q[4], q_next[5]);
+	dff_single(clk, q[5], q_next[6]);
+	dff_single(clk, q[6], q_next[7]);
+	dff_single(clk, q[7], q_next[8]);
+	dff_single(clk, q[8], q_next[9]);
+endmodule
+
+module lfsr_10_testbench
+	logic CLOCK_50;
+	logic [9:0] SW, d, q_next;
+	lsfr_10 dut (CLOCK_50, SW[9], 10'b0000000000, q_next);
+
+					repeat (1) @(posedge clk_select);
+	SW[9] = 1;	repeat (3) @(posedge CLOCK_50);
+	SW[9] = 0;	repeat (15) @(posedge CLOCK_50);
+endmodule
