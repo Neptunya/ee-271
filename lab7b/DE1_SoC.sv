@@ -18,8 +18,8 @@ module DE1_SoC (CLOCK_50, HEX5, HEX0, KEY, LEDR, SW);
 	logic clk_select;
 
 	// Uncomment ONE of the following two lines depending on intention
-	// assign clk_select = CLOCK_50; // for simulation
-	 assign clk_select = div_clk[whichClock]; // for board
+	 assign clk_select = CLOCK_50; // for simulation
+	// assign clk_select = div_clk[whichClock]; // for board
 
 	dff_pair dff_pairL(.clk(clk_select), .d(l), .q(l_btn));
 	dff_pair dff_pairR(.clk(clk_select), .d(r), .q(r_btn));

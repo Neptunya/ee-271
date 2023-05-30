@@ -6,8 +6,8 @@ add wave -noupdate /DE1_SOC_testbench/dut/sc1/reset_round
 add wave -noupdate -label l_pressed /DE1_SOC_testbench/dut/btnL/pressed
 add wave -noupdate -label r_pressed /DE1_SOC_testbench/dut/btnR/pressed
 add wave -noupdate -label up {/DE1_SOC_testbench/KEY[3]}
-add wave -noupdate -label down {/DE1_SOC_testbench/KEY[0]}
 add wave -noupdate /DE1_SOC_testbench/dut/tap
+add wave -noupdate /DE1_SOC_testbench/dut/cp/l10/q_n
 add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[9]}
 add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[8]}
 add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[7]}
@@ -17,13 +17,13 @@ add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[4]}
 add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[3]}
 add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[2]}
 add wave -noupdate -expand -group leds {/DE1_SOC_testbench/LEDR[1]}
-add wave -noupdate -group winner -label l_winner /DE1_SOC_testbench/dut/ell/winner
-add wave -noupdate -group winner /DE1_SOC_testbench/dut/sc1/l_win
-add wave -noupdate -group winner /DE1_SOC_testbench/dut/sc1/l_count
-add wave -noupdate -group winner -label r_winner /DE1_SOC_testbench/dut/elr/winner
-add wave -noupdate -group winner /DE1_SOC_testbench/dut/sc1/r_win
-add wave -noupdate -group winner /DE1_SOC_testbench/dut/sc1/r_count
-add wave -noupdate -group winner /DE1_SOC_testbench/dut/sc1/ps
+add wave -noupdate -expand -group winner -label l_winner /DE1_SOC_testbench/dut/ell/winner
+add wave -noupdate -expand -group winner /DE1_SOC_testbench/dut/sc1/l_win
+add wave -noupdate -expand -group winner /DE1_SOC_testbench/dut/sc1/l_count
+add wave -noupdate -expand -group winner -label r_winner /DE1_SOC_testbench/dut/elr/winner
+add wave -noupdate -expand -group winner /DE1_SOC_testbench/dut/sc1/r_win
+add wave -noupdate -expand -group winner /DE1_SOC_testbench/dut/sc1/r_count
+add wave -noupdate -expand -group winner /DE1_SOC_testbench/dut/sc1/ps
 add wave -noupdate -group {LEDR[4]} /DE1_SOC_testbench/dut/nl4/l
 add wave -noupdate -group {LEDR[4]} /DE1_SOC_testbench/dut/nl4/r
 add wave -noupdate -group {LEDR[4]} /DE1_SOC_testbench/dut/nl4/nl
@@ -48,7 +48,7 @@ add wave -noupdate -group {LEDR[9]} /DE1_SOC_testbench/dut/ell/light_on
 add wave -noupdate -group {LEDR[9]} /DE1_SOC_testbench/dut/ell/ps
 add wave -noupdate -group {LEDR[9]} /DE1_SOC_testbench/dut/ell/ns
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {2401 ps} 0}
+WaveRestoreCursors {{Cursor 1} {2445 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
