@@ -32,7 +32,7 @@ module LED_test(RST, RedPixels, GrnPixels);
 		  RedPixels[12] = 16'b1011000000001101;
 		  RedPixels[13] = 16'b1011111111111101;
 		  RedPixels[14] = 16'b1100000000000011;
-		  RedPixels[15] = 16'b1111111111111111;
+		  RedPixels[15] = 16'b0000000000000000;
 		  
 		  //                  FEDCBA9876543210
 		  GrnPixels[00] = 16'b1000000000000001;
@@ -50,7 +50,7 @@ module LED_test(RST, RedPixels, GrnPixels);
 		  GrnPixels[12] = 16'b0101111111111010;
 		  GrnPixels[13] = 16'b0110000000000110;
 		  GrnPixels[14] = 16'b0111111111111110;
-		  GrnPixels[15] = 16'b1000000000000001;
+		  GrnPixels[15] = 16'b0000000000000000;
 		end
 	end
 
