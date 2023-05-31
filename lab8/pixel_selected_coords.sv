@@ -1,9 +1,9 @@
-module pixel_selected_coords (reset, left, right, row_select, current_x, current_y, next_x, next_y);
+module pixel_selected_coords (reset, l, r, row_select, current_x, current_y, next_x, next_y);
 	input logic reset;
-	input logic left, right; // run through fsm so only up for 1 clock input
+	input logic l, r; // run through fsm so only up for 1 clock input
 	input logic [7:0] row_select;
-	input reg current_x, current_y;
-	output reg next_x, next_y;
+	input logic [7:0] current_x, current_y;
+	output logic [7:0] next_x, next_y;
 
 	always_comb begin
 		if (reset) begin
@@ -12,10 +12,10 @@ module pixel_selected_coords (reset, left, right, row_select, current_x, current
 		end
 		else begin
 			// left right stuff
-			if (left & !right) begin
+			if (l & !r) begin
 				next_x = current_x + 1;
 			end
-			else if (right & !left) begin
+			else if (r & !l) begin
 				next_x = current_x - 1;
 			end
 			else begin
