@@ -1,3 +1,9 @@
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (10268): Verilog HDL information at pixel_start.sv(69): always construct contains both blocking and non-blocking assignments File: C:/Users/Anna/Documents/ee-271/lab8/pixel_start.sv Line: 69
 Warning (10268): Verilog HDL information at pixel_norm.sv(69): always construct contains both blocking and non-blocking assignments File: C:/Users/Anna/Documents/ee-271/lab8/pixel_norm.sv Line: 69
+Warning (10030): Net "GrnPixels[3][15..4]" at DE1_SoC.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Anna/Documents/ee-271/lab8/DE1_SoC.sv Line: 48
+Warning (10030): Net "GrnPixels[15..4]" at DE1_SoC.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Anna/Documents/ee-271/lab8/DE1_SoC.sv Line: 48
+Warning (10030): Net "GrnPixels[2][15..4]" at DE1_SoC.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Anna/Documents/ee-271/lab8/DE1_SoC.sv Line: 48
+Warning (10030): Net "GrnPixels[1][15..4]" at DE1_SoC.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Anna/Documents/ee-271/lab8/DE1_SoC.sv Line: 48
+Warning (10030): Net "GrnPixels[0][15..4]" at DE1_SoC.sv(48) has no driver or initial value, using a default initial value '0' File: C:/Users/Anna/Documents/ee-271/lab8/DE1_SoC.sv Line: 48
 Warning (10034): Output port "LEDR" at DE1_SoC.sv(4) has no driver File: C:/Users/Anna/Documents/ee-271/lab8/DE1_SoC.sv Line: 4

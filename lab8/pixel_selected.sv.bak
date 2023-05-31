@@ -1,5 +1,5 @@
-module pixel_selected (clk, reset, l, r, row_select, pixel_board, current_x, current_y, next_x, next_y);
-	input logic clk, reset;
+module pixel_selected (reset, l, r, row_select, pixel_board, current_x, current_y, next_x, next_y);
+	input logic reset;
 	input logic l, r;
 	input logic [7:0] row_select;
 	input logic [7:0][7:0] pixel_board;
@@ -15,12 +15,10 @@ module pixel_selected (clk, reset, l, r, row_select, pixel_board, current_x, cur
 		current_y = 8;
 		current_x = 8;
 		// check columns, set to base coords if none are on
-		if (pixel_board != 0) begin
-			for (int i = 0; i < 8; i++) begin
-				if (pixel_board[i] != 0) begin
-					current_y = i;
-					break;
-				end
+		for (int i = 0; i < 8; i++) begin
+			if (pixel_board[i] != 0) begin
+				current_y = i;
+				break;
 			end
 		end
 
@@ -32,12 +30,12 @@ module pixel_selected (clk, reset, l, r, row_select, pixel_board, current_x, cur
 		// get specific coord
 		if (current_x == 8) begin
 			for (int i = 0; i < 8; i++) begin
-				if (pixel_board[current_y][i] == 1) begin
+				if (pixel_board[current_y] == 1) begin
 					current_x = i;
 					break;
 				end
 			end
 		end
 	end
-	pixel_selected_coords psc (.clk(clk), .reset(reset), .l(l), .r(r), .row_select(row_select), .current_x(current_x), .current_y(current_y), .next_x(next_x), .next_y(next_y));
+	pixel_selected_coords psc (.reset(reset), .l(l), .r(r), .row_select(row_select), .current_x(current_x), .current_y(current_y), .next_x(next_x), .next_y(next_y));
 endmodule

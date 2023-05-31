@@ -668,6 +668,10 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS
+set_global_assignment -name SYSTEMVERILOG_FILE pixel_start.sv
+set_global_assignment -name SYSTEMVERILOG_FILE button_fsm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pixel_selected_coords.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pixel_selected.sv
 set_global_assignment -name SYSTEMVERILOG_FILE pixel_norm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE adjacent_lights_counter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE LEDDriver.sv

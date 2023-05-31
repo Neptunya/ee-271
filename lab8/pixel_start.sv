@@ -4,7 +4,6 @@ module pixel_start (clk, reset, n, ne, e, se, s, sw, w, nw, toggle, light_select
 	input logic toggle; // switch light state (run the button press through a dff so it's only up for 1 clock cycle)
 	input logic light_selected; // is light's red pixel on?
 	input logic setup; // setup switch that determines current state;
-	input logic [8:0] row;
 	output logic light_on; // determines light's green pixel state
 	reg count;
 
