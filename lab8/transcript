@@ -1,0 +1,133 @@
+# Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./pixel_start.sv 
+# -- Compiling module pixel_start
+# 
+# Top level modules:
+# 	pixel_start
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./pixel_selected_coords.sv 
+# -- Compiling module pixel_selected_coords
+# 
+# Top level modules:
+# 	pixel_selected_coords
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./pixel_selected.sv 
+# -- Compiling module pixel_selected
+# 
+# Top level modules:
+# 	pixel_selected
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./pixel_norm.sv 
+# -- Compiling module pixel_norm
+# 
+# Top level modules:
+# 	pixel_norm
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./adjacent_lights_counter.sv 
+# -- Compiling module adjacent_lights_counter
+# 
+# Top level modules:
+# 	adjacent_lights_counter
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./button_fsm.sv 
+# -- Compiling module button_fsm
+# -- Compiling module button_fsm_testbench
+# 
+# Top level modules:
+# 	button_fsm_testbench
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:00 on May 31,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 21:04:00 on May 31,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 21:04:00 on May 31,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.LEDDriver
+# Loading work.button_fsm
+# Loading work.pixel_selected_coords
+# Loading work.pixel_norm
+# Loading work.adjacent_lights_counter
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(63): [PCDPC] - Port size (64) does not match connection size (8) for port 'pixel_board'. The port definition is at: ./pixel_selected_coords.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/p_slct_c File: ./pixel_selected_coords.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(423)
+#    Time: 5350 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 423
+add wave -position 3  sim:/DE1_SoC_testbench/SW[6]
+add wave -position 4  sim:/DE1_SoC_testbench/SW[4]
+add wave -position 9  sim:/DE1_SoC_testbench/dut/Driver/RedPixels[6]
+add wave -position 10  sim:/DE1_SoC_testbench/dut/Driver/RedPixels[4]
+add wave -position 20  sim:/DE1_SoC_testbench/dut/Driver/GrnPixels[6]
+# End time: 22:09:13 on May 31,2023, Elapsed time: 1:05:13
+# Errors: 0, Warnings: 1

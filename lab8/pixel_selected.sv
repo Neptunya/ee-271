@@ -12,32 +12,29 @@ module pixel_selected (clk, reset, l, r, row_select, pixel_board, current_x, cur
 	// if no pixels, set to (3, 3)
 
 	always_comb begin
-		current_y = 8;
-		current_x = 8;
-		// check columns, set to base coords if none are on
-		if (pixel_board != 0) begin
+		if (reset) begin
+			current_y = 0;
+			current_x = 0;
+		end
+		else begin
+			current_y = 8;
+			// check columns, set to base coords if none are on
 			for (int i = 0; i < 8; i++) begin
-				if (pixel_board[i] != 0) begin
+				if (pixel_board[i] == 1) begin
 					current_y = i;
-					break;
+					for (int j = 0; j < 8; j++) begin
+						if (pixel_board[i][j] == 1) begin
+							current_x = j;
+							break;
+						end
+					end
 				end
 			end
-		end
-
-		if (current_y == 8) begin
-			current_y = 3;
-			current_x = 3;
-		end
-
-		// get specific coord
-		if (current_x == 8) begin
-			for (int i = 0; i < 8; i++) begin
-				if (pixel_board[current_y][i] == 1) begin
-					current_x = i;
-					break;
-				end
+			
+			if (current_y == 8) begin
+				current_y = 0;
 			end
 		end
 	end
-	pixel_selected_coords psc (.clk(clk), .reset(reset), .l(l), .r(r), .row_select(row_select), .current_x(current_x), .current_y(current_y), .next_x(next_x), .next_y(next_y));
+	pixel_selected_coords psc (.clk(clk), .reset(reset), .l(l), .r(r), .row_select(row_select), .pixel_board, .current_x(current_x), .current_y(current_y), .next_x(next_x), .next_y(next_y));
 endmodule

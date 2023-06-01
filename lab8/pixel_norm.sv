@@ -5,7 +5,7 @@ module pixel_norm (clk, reset, n, ne, e, se, s, sw, w, nw, toggle, light_selecte
 	input logic light_selected; // is light's red pixel on?
 	input logic setup; // setup switch that determines current state;
 	output logic light_on; // determines light's green pixel state
-	reg count;
+	reg [7:0] count;
 
 	enum { setup_off, setup_on, game_off, game_on, idle } ps, ns;
 	adjacent_lights_counter alc (.clk(clk), .n(n), .ne(ne), .e(e), .se(se), .s(s), .sw(sw), .w(w), .nw(nw), .count(count));
@@ -14,54 +14,57 @@ module pixel_norm (clk, reset, n, ne, e, se, s, sw, w, nw, toggle, light_selecte
 		case (ps)
 			game_off:
 				if (setup) begin
-					ns = setup_off;
+					ns <= setup_off;
 				end
 				else if (count == 3) begin
-					ns = game_on;
+					ns <= game_on;
 				end
 				else begin
-					ns = game_off;
+					ns <= game_off;
 				end
 
 			game_on:
 				if (setup) begin
 					ns = setup_on;
 				end
-				else if (count == 2 | count == 3) begin
-					ns = game_on;
+				else if (count == 2) begin
+					ns <= game_on;
+				end
+				else if (count == 3) begin
+					ns <= game_on;
 				end
 				else begin
-					ns = game_off;
+					ns <= game_off;
 				end
 
 			setup_off:
 				if (!setup) begin
-					ns = game_off;
+					ns <= game_off;
 				end
 				else if (light_selected & toggle) begin
-					ns = setup_on;
+					ns <= setup_on;
 				end
 				else begin
-					ns = setup_off;
+					ns <= setup_off;
 				end
 
 			setup_on:
 				if (!setup) begin
-					ns = game_on;
+					ns <= game_on;
 				end
 				else if (light_selected & toggle) begin
-					ns = setup_off;
+					ns <= setup_off;
 				end
 				else begin
-					ns = setup_on;
+					ns <= setup_on;
 				end
 
 			idle:
 				if (setup) begin
-					ns = setup_off;
+					ns <= setup_off;
 				end
 				else begin
-					ns = game_off;
+					ns <= game_off;
 				end
 		endcase
 	end
@@ -73,10 +76,10 @@ module pixel_norm (clk, reset, n, ne, e, se, s, sw, w, nw, toggle, light_selecte
 		else begin
 			ps <= ns;
 			case (ps)
-				game_on, setup_on:
-					light_on = 1;
-				game_off, setup_off, idle:
-					light_on = 0;
+				setup_off, game_off, idle:
+					light_on <= 0;
+				setup_on, game_on:
+					light_on <= 1;
 			endcase
 		end
 	end

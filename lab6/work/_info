@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Anna/Documents/ee-271/lab6
 vbutton_fsm
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1684186913
+Z2 !s110 1685577052
 !i10b 1
 !s100 kVd6:5VmXBWB`hL`L5gzN1
 IhT@8HOjUK89>@O5D17Yd92
@@ -18,7 +18,7 @@ Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 button_fsm_sv_unit
 S1
 R0
-Z5 w1683562288
+Z5 w1683509861
 Z6 8./button_fsm.sv
 Z7 F./button_fsm.sv
 L0 4
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1684186913.000000
+Z9 !s108 1685577052.000000
 Z10 !s107 ./button_fsm.sv|
 Z11 !s90 -reportprogress|300|./button_fsm.sv|
 !i113 1
@@ -64,7 +64,7 @@ R3
 Z13 !s105 center_light_sv_unit
 S1
 R0
-Z14 w1683671067
+Z14 w1683612264
 Z15 8./center_light.sv
 Z16 F./center_light.sv
 L0 1
@@ -110,7 +110,7 @@ R3
 Z19 !s105 DE1_SOC_sv_unit
 S1
 R0
-Z20 w1684167667
+Z20 w1684105437
 Z21 8./DE1_SOC.sv
 Z22 F./DE1_SOC.sv
 L0 1
@@ -158,7 +158,7 @@ R3
 !s105 dff_pair_sv_unit
 S1
 R0
-R5
+w1683509492
 8./dff_pair.sv
 F./dff_pair.sv
 L0 1
@@ -181,7 +181,7 @@ R3
 !s105 dff_single_sv_unit
 S1
 R0
-R5
+w1683509558
 8./dff_single.sv
 F./dff_single.sv
 L0 1
@@ -204,7 +204,7 @@ R3
 !s105 end_light_left_sv_unit
 S1
 R0
-Z25 w1684167702
+w1684105682
 8./end_light_left.sv
 F./end_light_left.sv
 L0 1
@@ -227,7 +227,7 @@ R3
 !s105 end_light_right_sv_unit
 S1
 R0
-R25
+w1684105661
 8./end_light_right.sv
 F./end_light_right.sv
 L0 1
@@ -242,48 +242,48 @@ R9
 R12
 vleft_right_stay
 R1
-Z26 !s110 1683514880
+Z25 !s110 1683514880
 !i10b 1
 !s100 LR?1Nne6Td`j4XBzL3z9e0
 IE:mbUKAc>QSZ^zMfE^SWb3
 R3
-Z27 !s105 left_right_stay_sv_unit
+Z26 !s105 left_right_stay_sv_unit
 S1
 R0
-Z28 w1683514871
-Z29 8./left_right_stay.sv
-Z30 F./left_right_stay.sv
+Z27 w1683514871
+Z28 8./left_right_stay.sv
+Z29 F./left_right_stay.sv
 L0 1
 R8
 r1
 !s85 0
 31
-Z31 !s108 1683514880.000000
-Z32 !s107 ./left_right_stay.sv|
-Z33 !s90 -reportprogress|300|./left_right_stay.sv|
+Z30 !s108 1683514880.000000
+Z31 !s107 ./left_right_stay.sv|
+Z32 !s90 -reportprogress|300|./left_right_stay.sv|
 !i113 1
 R12
 vleft_right_stay_testbench
 R1
-R26
+R25
 !i10b 1
 !s100 KeX=bZj5GzaD4dnF8MEN`1
 IC?aTf9lVzjm0@7i_5l6C;3
 R3
-R27
+R26
 S1
 R0
+R27
 R28
 R29
-R30
 L0 29
 R8
 r1
 !s85 0
 31
+R30
 R31
 R32
-R33
 !i113 1
 R12
 vnormal_light
@@ -296,7 +296,7 @@ R3
 !s105 normal_light_sv_unit
 S1
 R0
-R14
+w1683612251
 8./normal_light.sv
 F./normal_light.sv
 L0 1
